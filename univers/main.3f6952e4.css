@@ -2759,7 +2759,6 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-group-lg > .btn,
 .btn-lg {
-  padding: 3px 6px;
   line-height: 1.33333;
   border-radius: 0;
 	font-weight:bold;
@@ -2771,8 +2770,8 @@ fieldset[disabled] .btn-link:hover {
 	-webkit-text-stroke-color: black;
 	/* position: absolute !important; */
 	position: absolute;
-	margin-top:-366px;
-	margin-left:27%;
+	margin-top:-356px;
+	margin-left:-63px;
 	font-weight: 600 !important;
 	/* font-weight: 70 !important; */
 	color:white !important;
