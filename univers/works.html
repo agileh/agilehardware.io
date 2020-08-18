@@ -11,15 +11,32 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Title page</title>
 
 <link href="./main.3f6952e4.css" rel="stylesheet"></head>
 
-<body class="">
+<body >
+	<!--
+	<svg width="500" height="500">
+
+		<filter id='roughpaper' x='0%' y='0%' width='100%' height="100%">
+
+				<feTurbulence type="fractalNoise" baseFrequency='0.04' result='noise' numOctaves="5" />
+
+				<feDiffuseLighting in='noise' lighting-color='white' surfaceScale='2'>
+						<feDistantLight azimuth='45' elevation='60' />
+	</feDiffuseLighting>
+
+	</filter>
+
+		<rect x="0" y="0" width="500" height="500" filter="url(#roughpaper)" fill="none">
+	</svg>
+
+-->
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
@@ -45,15 +62,15 @@
         </ul>
 
 
-      </div> 
+      </div>
     </div>
   </nav>
 </header>
 
-<div class="section-container">
-  <div class="container">
+<div class="section-container paperpattern">
+  <div class="container ">
     <div class="row">
-      
+
       <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
         <div class="text-center">
           <h1 class="h2">02 : Works</h1>
@@ -62,7 +79,7 @@
       </div>
 
       <div class="col-md-12">
-     
+
       <div id="myCarousel" class="carousel slide projects-carousel">
         <!-- Carousel items -->
         <div class="carousel-inner">
@@ -102,7 +119,7 @@
                         <a href="./work.html" title="" class="btn btn-default">Discover</a>
                       </div>
                     </div>
-                    
+
                 </div>
                 <!--/row-->
             </div>
@@ -131,7 +148,7 @@
                         <a href="./work.html" class="btn btn-default">Discover</a>
                       </div>
                     </div>
-                    
+
                     <div class="col-sm-4">
                       <a href="./work.html" class="black-image-project-hover">
                         <img src="./assets/images/work03-hover.jpg" alt="Image" class="img-responsive">
@@ -143,14 +160,14 @@
                         <a href="./work.html" class="btn btn-default">Discover</a>
                       </div>
                     </div>
-                    
+
                 </div>
                 <!--/row-->
             </div>
-            
+
             <!--/item-->
         </div>
-        <!--/carousel-inner--> 
+        <!--/carousel-inner-->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
 
         <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
@@ -184,7 +201,7 @@
   });
 </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID
 
 <script>
   (function (i, s, o, g, r, a, m) {

@@ -2454,13 +2454,14 @@ fieldset[disabled] .btn-default:hover {
   color: transparent;
   background-color: #000;
 }
+/* Background image from https://www.123rf.com/photo_61582630_closeup-electronic-circuit-board-background.html */
 .btn-primary {
-	border:3px solid black;
-  background: url(./assets/images/electronics.jpg) no-repeat 71%;
+	border:1px solid black;
+  background: url(./assets/images/electronics.jpg) no-repeat 81%;
 }
 .btn-primary:hover {
 	/* border:4px solid black; */
-	background: url(./assets/images/electronics.jpg) no-repeat 79%;
+	background: url(./assets/images/electronics.jpg) no-repeat 83%;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -2762,11 +2763,11 @@ fieldset[disabled] .btn-link:hover {
   line-height: 1.33333;
   border-radius: 0;
 	font-weight:bold;
-	font-size:3em;
-	-webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
 }
 .btn-more {
+	font-size:2.8em;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
 	/* position: absolute !important; */
 	position: absolute;
 	margin-top:-366px;
@@ -2777,7 +2778,7 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-more:hover {
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color: white;
 }
 .btn-group-sm > .btn,
 .btn-sm {
@@ -5289,7 +5290,7 @@ textarea {
   background-position: 50% 50%;
 }
 
-/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+/* Background image from https://www.123rf.com/photo_61582630_closeup-electronic-circuit-board-background.html */
 .clip-text_one {
   background-image: url(./assets/images/electronics.jpg);
 }
@@ -5306,4 +5307,12 @@ textarea {
 	margin-top: -10px;
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+/* paper.jpg generated with help https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/ THX Sara Soueidan! */
+.paperpattern {
+	background-image: url(./assets/images/paper.jpg);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+	z-index: 4;
 }
