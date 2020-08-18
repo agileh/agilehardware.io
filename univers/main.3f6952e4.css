@@ -2765,7 +2765,8 @@ fieldset[disabled] .btn-link:hover {
 	font-weight:bold;
 }
 .btn-more {
-	font-size:2.8em;
+	z-index: 3;
+	font-size:2.2em;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
 	/* position: absolute !important; */
@@ -5304,16 +5305,18 @@ textarea {
 
 .subtext {
 	font-family: Roboto, Helvetica, Arial, sans-serif;
-	font-size: 3.6em;
+	font-size: 3em;
   font-weight: bold;
   line-height: 1;
-	color:#34B3E9;
+	color:white;
+	/* color:#34B3E9; */
   position: relative;
   display: inline-block;
   text-align: center;
 	margin-top: -10px;
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+
 }
 
 /* paper.jpg generated with help https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/ THX Sara Soueidan! */
@@ -5343,4 +5346,14 @@ textarea {
 
 .grayscale {
 	filter: grayscale(100%);
+}
+
+.cardanologo{
+	position: absolute;
+	z-index: 2;
+	margin-top: -410px;
+	width: 100%;
+	height: 417px;
+	background: url(./assets/images/cardanologo2.png) no-repeat center;
+	/* opacity: 0.57; */
 }
