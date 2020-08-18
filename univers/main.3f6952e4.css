@@ -5243,6 +5243,13 @@ textarea {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #34b3e9;
+	cursor: pointer;
+	transition: 0.333s;
+}
+.clip-text:hover {
+	background-position: -100% 100%;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 .clip-text:before,
@@ -5315,4 +5322,25 @@ textarea {
   background-repeat: repeat-y;
   background-size: 100% auto;
 	z-index: 4;
+}
+
+.logo {
+	margin-top:-21px;
+	display:block;
+  width: 246px;
+  height: 55px;
+  background: url(./assets/images/logo246x55.png) no-repeat center center;
+  /* background-size: contain; */
+}
+
+.logo:hover {
+	background: url(./assets/images/logo246x55_hover.png) no-repeat center center;
+	/* border: 2px solid black; */
+	-webkit-transition:  0.2s;
+	-o-transition:  0.2s;
+	transition:  0.2s;
+}
+
+.grayscale {
+	filter: grayscale(100%);
 }
