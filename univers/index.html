@@ -72,13 +72,13 @@
 
               <div class="wrapper">
 
-                <div class="clip-text clip-text_one">Agile Hardware</div>
+                <div id="logoel" class="clip-text clip-text_one">Agile Hardware</div>
 
             	</div>
 
 							<div class="wrapper">
 
-                <div class="subtext"><u style="text-decoration-color: white;">Cardano Stake Pool</u></div>
+                <div class="subtext">Cardano Stake Pool</div>
 
             	</div>
 
@@ -101,8 +101,8 @@
               </div>
 
 							<div class="wrapper">
-
-								<a href="" class="btn btn-primary btn-lg btn-more">Learn more</a>
+                
+								<a id="moreel" href="" class="btn btn-primary btn-lg btn-more">&nbsp;&nbsp;MORE INFO&nbsp; ➠</a>
 
                 <div class="cardanologo"></div>
 
@@ -116,11 +116,30 @@
       </div>
     </div>
 
-    <script>
+    <script type="text/javascript">
+
       document.addEventListener("DOMContentLoaded", function (event) {
         type();
         movingBackgroundImage();
+
+        var logoEl = document.getElementById('logoel');
+        var moreEl = document.getElementById('moreel');
+
+        logoEl.addEventListener('mouseover', function() {
+
+          moreEl.classList.add("more_hover");
+
+          // simulateCssEvent('hover');
+
+        });
+
+        logoEl.addEventListener('mouseout', function() {
+            
+          moreEl.classList.remove("more_hover");
+           
+        });
       });
+
     </script>
 
     <script type="text/javascript" src="./main.70a66962.js"></script>
