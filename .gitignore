@@ -1,3 +1,6 @@
+# Virtual environment:
+django/mysite/secret.py
+django/venv/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
