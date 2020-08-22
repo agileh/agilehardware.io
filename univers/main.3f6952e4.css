@@ -2767,7 +2767,7 @@ fieldset[disabled] .btn-link:hover {
   z-index: 5;
   position: absolute;
 	font-size: 22px !important;
-	margin-top: -220px;
+	margin-top: -221px;
 	margin-left: -93px;
 	font-weight: 600 !important;
   color:white !important;
@@ -2784,6 +2784,9 @@ fieldset[disabled] .btn-link:hover {
   color:black !important;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+.color_to_my_blue {
+  color:#34b3e9;
 }
 .btn-group-sm > .btn,
 .btn-sm {
@@ -4795,8 +4798,10 @@ body.minimal {
 .hero-full-container .hero-full-wrapper .text-content {
   vertical-align: middle;
   display: table-cell;
-	font-size:0.5em;
-	padding-top:40px;
+	font-size:0.44em;
+  padding-top:40px;
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
+
 }
 .white-text-container h1,
 .white-text-container h2,
@@ -5316,7 +5321,7 @@ textarea {
 
 .subtext {
 	font-family: Roboto, Helvetica, Arial, sans-serif;
-	font-size: 3em;
+	font-size: 2.4em;
   font-weight: bold;
   line-height: 1;
 	color:white;
@@ -5325,8 +5330,9 @@ textarea {
   display: inline-block;
   text-align: center;
 	margin-top: -10px;
-	-webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+	/* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
 
 }
 
