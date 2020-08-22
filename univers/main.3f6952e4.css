@@ -5244,10 +5244,11 @@ textarea {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #34b3e9;
 	cursor: pointer;
-	transition: 0.333s;
+  transition: 0.133s;
+  background-position: center;
 }
 .clip-text:hover {
-	background-position: -100% 100%;
+	background-position: -100% 10%;
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
