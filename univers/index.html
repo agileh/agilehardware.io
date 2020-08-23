@@ -19,7 +19,26 @@
       sizes="180x180"
       href="./assets/apple-icon-180x180.png"
     />
-    <link href="./assets/favicon.ico" rel="icon" />
+    <!-- <link href="./assets/favicon.ico" rel="icon" /> -->
+
+    <link rel="apple-touch-icon-precomposed"
+    sizes="57x57" href="./assets/favicon/favicon-apple-touch-114.png">
+
+    <link rel="apple-touch-icon-precomposed"
+        sizes="114x114" href="./assets/favicon/favicon-apple-touch-114.png">
+
+    <link rel="apple-touch-icon-precomposed"
+        sizes="72x72" href="./assets/favicon/favicon-apple-touch-144.png">
+
+    <link rel="apple-touch-icon-precomposed"
+        sizes="144x144" href="./assets/favicon/favicon-apple-touch-144.png">
+
+    <link rel="icon" type="image/vnd.microsoft.icon"
+        sizes="32x32 48x48" href="./assets/favicon/favicon.ico">
+
+    <link rel="icon" sizes="128x128" href="./assets/favicon/favicon.icns">
+
+    <link rel="icon" href="./assets/favicon/favicon.png" type="image/x-icon">
 
     <title>Agile Hardware Cardano Staking Pool</title>
 
@@ -72,21 +91,21 @@
 
               <div class="wrapper">
 
-                <div id="logoel" class="clip-text clip-text_one">Agile Hardware</div>
+                <div id="logoel" class="clip-text clip-text_one first_hidden">Agile Hardware</div>
 
             	</div>
 
 							<div class="wrapper">
 
-                <div class="subtext">Cardano Stake Pool</div>
+                <div id="subtextel" class="subtext first_hidden">Cardano Stake Pool</div>
 
             	</div>
 
               <h1><h1/>
 
-              <div class="text-content">
+              <div class="text-content ">
 
-                  <span id="typed-strings">
+                  <span id="typed-strings" class="first_hidden">
                     <span><b class="color_to_my_blue">+</b> Group of cryptocurrency enthusiasts</span>
                     <span><b class="color_to_my_blue">+</b> Team of software engineers & open source evangelists</span>
                     <span><b class="color_to_my_blue">+</b> Team of aspiring smart contract developers</span>
@@ -102,9 +121,9 @@
 
 							<div class="wrapper">
                 
-								<a id="moreel" href="" class="btn btn-primary btn-lg btn-more">&nbsp;&nbsp;MORE INFO&nbsp; ➠</a>
+								<a id="moreel" href="" class="btn btn-primary btn-lg btn-more first_hidden">&nbsp;&nbsp;MORE INFO&nbsp; ➠</a>
 
-                <div class="cardanologo"></div>
+                <div id="cardanologoel" class="cardanologo first_hidden"></div>
 
             	</div>
 
@@ -118,25 +137,97 @@
 
     <script type="text/javascript">
 
+      /*
+        Fade-in function based of "Fade HTML element with raw javascript" https://stackoverflow.com/a/2695777 
+        THX kennebec (https://stackoverflow.com/users/80860/kennebec)
+      */
+      function fadeIn(elem, speed,callback){
+          if(elem.style){
+              elem.style.opacity= '0';
+          }
+          window.fadetimer= setInterval(function(){
+              elem.style.opacity= +(elem.style.opacity)+.02;
+
+              switch (elem.id) {
+                case 'cardanologoel':
+
+                  if(elem.style.opacity> 0.77){
+                      clearInterval(fadetimer);
+                      callback();
+                  }
+                  break;
+              
+                default:
+                  if(elem.style.opacity> 1){
+                      clearInterval(fadetimer);
+                      callback();
+                  }
+                  break;
+              }
+
+
+              
+          },
+          speed);
+      }
+
       document.addEventListener("DOMContentLoaded", function (event) {
-        type();
-        movingBackgroundImage();
+          // type();
+          movingBackgroundImage();
 
-        var logoEl = document.getElementById('logoel');
-        var moreEl = document.getElementById('moreel');
+          var logoEl = document.getElementById('logoel');
+          var moreEl = document.getElementById('moreel');
+          var subtextEl = document.getElementById('subtextel');
+          var cardanologoEl = document.getElementById('cardanologoel');
+          
 
-        logoEl.addEventListener('mouseover', function() {
+          logoEl.addEventListener('mouseover', function() {
 
-          moreEl.classList.add("more_hover");
+            moreEl.classList.add("more_hover");
+            cardanologoEl.style.opacity = 1;
 
-        });
+          });
 
-        logoEl.addEventListener('mouseout', function() {
+          logoEl.addEventListener('mouseout', function() {
+              
+            moreEl.classList.remove("more_hover");
+            cardanologoEl.style.opacity = 0.77;
             
-          moreEl.classList.remove("more_hover");
-           
+          });
+
+          moreEl.addEventListener('mouseover', function() {
+
+          cardanologoEl.style.opacity = 1;
+
+          });
+
+          moreEl.addEventListener('mouseout', function() {
+            
+          cardanologoEl.style.opacity = 0.77;
+
+          });
+
+          fadeIn(logoEl,3,function() {
+
+            fadeIn(subtextEl,3,function() {
+
+              fadeIn(moreEl,3,function() {
+
+                type();
+
+                fadeIn(cardanologoEl,9,function() {
+
+                  // console.log("done animating");
+
+                });
+
+              });
+
+            });
+
+          });
+
         });
-      });
 
     </script>
 

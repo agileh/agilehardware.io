@@ -5254,7 +5254,7 @@ textarea {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #34b3e9;
 	cursor: pointer;
-  transition: 0.111s;
+  /* transition: 0.111s; */
   background-position: center;
 
 }
@@ -5262,7 +5262,7 @@ textarea {
 	/* Add the blur effect */
   /* filter: blur(1px);
   -webkit-filter: blur(1px); */
-  text-shadow:1px 1px 10px #fff, 1px 1px 10px  rgba(255,255,255, 0.05);
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px  rgba(255,255,255, 0.01);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -5375,7 +5375,7 @@ textarea {
 	width: 100%;
 	height: 417px;
 	background: url(./assets/images/cardanologo2.png) no-repeat center;
-	/* opacity: 0.57; */
+	opacity: 0.77;
 }
 
 .twitterlogo{
@@ -5413,4 +5413,8 @@ textarea {
 	margin-top:10px;
 	padding-bottom:17px;
 	background-color: black;
+}
+
+.first_hidden {
+  opacity: 0;
 }
