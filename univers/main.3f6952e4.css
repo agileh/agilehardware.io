@@ -2806,6 +2806,7 @@ fieldset[disabled] .btn-link:hover {
 }
 
 .btn-more_contact {
+  margin-bottom: 30px;
   margin-left:23px;
   margin-right:23px;
   opacity: 1;
@@ -2824,6 +2825,7 @@ fieldset[disabled] .btn-link:hover {
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
 }
 .btn-more_blog {
+  margin-bottom: 30px;
   margin-left:33px;
   opacity: 1;
   border:2px solid rgba(0, 0, 0, .77);
@@ -2841,6 +2843,7 @@ fieldset[disabled] .btn-link:hover {
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
 }
 .btn-more_pool {
+  margin-bottom: 30px;
   opacity: 1;
   border:2px solid rgba(0, 0, 0, .77);
   float:left;
@@ -5575,7 +5578,7 @@ moreinfo_who {
 }
 
 .moreinfo_who_text {
-  font-size: 1.77em;
+  font-size: 1.5em;
   color:white;
   font-weight: 300;
   line-height: 1.9;
@@ -5592,7 +5595,7 @@ moreinfo_who {
 }
 
 .moreinfo_who_text2 {
-  font-size: 1.77em;
+  font-size: 1.5em;
   color:white;
   font-weight: 300;
   line-height: 1.9;
