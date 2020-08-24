@@ -2764,6 +2764,8 @@ fieldset[disabled] .btn-link:hover {
 	font-weight:bold;
 }
 .btn-more {
+  border:2px solid rgba(0, 0, 0, .77);
+  border-radius: 15px 15px 15px 15px;
   z-index: 5;
   position: absolute;
 	font-size: 22px !important;
@@ -2772,14 +2774,87 @@ fieldset[disabled] .btn-link:hover {
 	font-weight: 600 !important;
   color:white !important;
   padding-top: 3px !important;
-  width: 216px;
+  width: 219px;
   height: 40px;
-  transition: 0.1111s; 
+  transition: 0.2111s; 
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
 }
 .btn-more:hover {
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+}
+.btn-scrolldown {
+  opacity: 0;
+  border:2px solid rgba(0, 0, 0, .77);
+  margin-top:33px;
+  z-index: 5;
+	font-size: 22px !important;
+	font-weight: 600 !important;
+  color:white !important;
+  padding-top: 3px !important;
+  width: 116px;
+  height: 60px;
+  transition: 0.1111s;
+  background-color: black;
+  border-radius: 15px 15px 15px 15px;
+  background-position: 50% 0%;
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
+}
+
+.btn-scrolldown:hover { 
+  background-position: 50% 51%;
+}
+
+.btn-more_contact {
+  margin-left:23px;
+  margin-right:23px;
+  opacity: 1;
+  border:2px solid rgba(0, 0, 0, .77);
+  float:left;
+  z-index: 5;
+	font-size: 22px !important;
+	font-weight: 600 !important;
+  color:white !important;
+  width: 155px;
+  height: 51px;
+  transition: 0.1111s;
+  background-color: black;
+  border-radius: 15px 15px 15px 15px;
+  background-position: 50% 0%;
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
+}
+.btn-more_blog {
+  margin-left:33px;
+  opacity: 1;
+  border:2px solid rgba(0, 0, 0, .77);
+  float:left;
+  z-index: 5;
+	font-size: 22px !important;
+	font-weight: 600 !important;
+  color:white !important;
+  width: 255px;
+  height: 51px;
+  transition: 0.1111s;
+  background-color: black;
+  border-radius: 15px 15px 15px 15px;
+  background-position: 50% 0%;
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
+}
+.btn-more_pool {
+  opacity: 1;
+  border:2px solid rgba(0, 0, 0, .77);
+  float:left;
+  z-index: 5;
+	font-size: 22px !important;
+	font-weight: 600 !important;
+  color:white !important;
+  width: 215px;
+  height: 51px;
+  transition: 0.1111s;
+  background-color: black;
+  border-radius: 15px 15px 15px 15px;
+  background-position: 50% 0%;
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
 }
 .more_hover {
   -webkit-text-stroke-width: 1px;
@@ -3644,6 +3719,9 @@ tbody.collapse.in {
 }
 .navbar-nav {
   margin: 0.25px -15px;
+  background-color: black;
+  border-radius: 0px 30px 30px 0px;
+  border-top: 2px solid white;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -5306,10 +5384,30 @@ clip-text2 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #34b3e9;
-	cursor: pointer;
   transition: 0.1111s; 
   background-position: center;
   opacity: 0;
+}
+
+.clip-text4 {
+  /*font-family: "Oswald", sans-serif;*/
+  font-size: 4.4em;
+  font-weight: bold;
+  line-height: 1; 
+  position: relative;
+  display: inline-block;
+  margin: 0.225em;
+  padding: 0.5em 0.75em;
+  text-align: center;
+	margin-top: 60px;
+  /* Color fallback */
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #34b3e9;
+  transition: 0.1111s; 
+  background-position: center;
 }
 
 .clip-text:before,
@@ -5484,17 +5582,37 @@ moreinfo_who {
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
   opacity: 0;
   display: block;
-  background-color: rgba(0, 0, 0, .33);
+  background-color: rgba(0, 0, 0, .55);
   padding:33px 33px 33px 33px;
-  border-radius: 10px;
+  border-radius: 25px;
   border-radius: 10px 15px 15px 10px;
   z-index: 5;
   margin-top:33px;
+  border:7px solid rgba(0, 0, 0, .77);
+}
+
+.moreinfo_who_text2 {
+  font-size: 1.77em;
+  color:white;
+  font-weight: 300;
+  line-height: 1.9;
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
+  display: block;
+  background-color: rgba(0, 0, 0, .55);
+  padding:33px 33px 33px 33px;
+  border-radius: 25px;
+  border-radius: 10px 15px 15px 10px;
+  z-index: 5;
+  margin-top:33px;
+  border:7px solid rgba(0, 0, 0, 1);
+  /* width:106%; */
+  opacity: 1;
 }
 
 .moreinfo_sol {
 	background-image: url(./assets/images/sol.jpg);
   background-repeat: no-repeat;
+  opacity: 0;
   /* background-size: 100% auto;
 	z-index: 4; */
 }

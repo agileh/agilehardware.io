@@ -69,7 +69,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav" style="background-color: black;border-radius:0px 30px 30px 0px;border-top: 2px solid white;">
+            <ul class="nav navbar-nav">
               <li><a class="logo" href="./index.html" title=""></a></li>
               <li><a href="./works.html" title="">02 : Works</a></li>
               <li><a href="./about.html" title="">03 : About me</a></li>
@@ -81,9 +81,9 @@
       </nav>
     </header>
     <!-- Add your site or app content here -->
-    <div
+    <div id="bodyel"
       class="hero-full-container background-image-container white-text-container"
-      style="background-image: url('./assets/images/space2.jpg');"
+      style="background-image: url('./assets/images/space2.jpg');opacity:0;"
     >
       <div class="container">
         <div class="row">
@@ -92,7 +92,7 @@
 
               <div class="wrapper">
 
-                <div id="headerel" class="clip-text2 clip-text_one first_hidden">&nbsp;&nbsp;&nbsp;&nbsp;d</div> 
+                <div id="headerel" class="clip-text2 clip-text_one first_hidden">&nbsp;&nbsp;&nbsp;&nbsp;</div> 
               
               </div>
 
@@ -100,7 +100,7 @@
 
               <div class="wrapper">
 
-                <div id="title1el" class="clip-text3 clip-text_one ">Who we are?</div>
+                <div id="title1el" class="clip-text3 clip-text_one">Who are we?</div>
 
               </div>
 
@@ -120,6 +120,9 @@
                     We love how active the development of Cardano is and this is our first step into the ecosystem.
                   </div>
 
+
+								<a id="scrolldown1el" href="" class="btn btn-primary btn-lg btn-scrolldown first_hidden">MORE <br>▼</a>
+
                 </div>
 
               </div>
@@ -129,16 +132,46 @@
           </div>
         </div>
       </div>
-      <div class="section-container moreinfo_sol">
-        <!--<div class="tornpaper"><img src="./assets/images/tornpaper77x77.png" width="77" height="77"/></div>-->
+      <div id="moreinfo_solel" class="section-container moreinfo_sol">
         <div class="container ">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
-              <div class="text-center">
-                <h1 class="h2">02 : Works</h1>
-                <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula, id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis dapibus urna.</p>
+
+              <div class="wrapper">
+
+                <div id="title2el" class="clip-text4 clip-text_one">Why Cardano?</div>
+
               </div>
-            </div>
+
+              <div class="text-center">
+                
+                <div class="moreinfo_who_text2">
+                  Cardano was easy choice once we decided to work full time for a cryptocurrency.
+                  However we also want to join the community because there is so much code which needs to be created here.
+                  Not like Bitcoin where there is so much “noise”, “maximalism” and toxicity in general.
+                  We still love Bitcoin though, he is the king because Bitcoin in general is the first “digital gold” ever created.
+                  It’s code is stored unbelievable securely “written in the stone” for more than 1000yrs which proves how important Bitcoin is.
+                  It’s really incredible human achievement, probably as incredible as the Internet itself.
+                  The Blockchain (the ledger ) is in wat “written in stone” too, because it is permanent and cannot be changed thanks to Bitcoin’s protocol design, mining and nodes running around the world 24/7.
+                  No government or agency can turn it off.
+                  It’s inflation by mining is steady and almost everything what was promised was already achieved.
+                  Maybe only things what Bitcoin ecosystem miss are.
+                  True decentralization and true scaling – we believe that the Cardano will deliver both!
+                </div>
+
+                <div class="wrapper" style="padding:10px 10px 10px 10px;">
+
+                  <a id="more_blogel" href="" class="btn btn-primary btn-lg btn-more_blog">MORE INFO</a>
+
+                  <a id="more_blogel" href="" class="btn btn-primary btn-lg btn-more_contact">CONTACT</a>
+                
+                  <a id="more_poolel" href="" class="btn btn-primary btn-lg btn-more_pool">&nbsp;&nbsp;STAKING POOL&nbsp; ➠</a>
+  
+  
+                </div>
+             
+              </div>
+            </div> 
     </div>
 
     <script type="text/javascript">
@@ -182,28 +215,36 @@
           movingBackgroundImage();
 
           var headerEl = document.getElementById('headerel');
+
+          var bodyEl = document.getElementById('bodyel');
+
           var title1El = document.getElementById('title1el');
           var text1El = document.getElementById('text1el');
-          var cardanologoEl = document.getElementById('cardanologoel');
-        
+          var scrolldown1El = document.getElementById('scrolldown1el');
+          var moreinfo_solEl = document.getElementById('moreinfo_solel');
 
-          fadeIn(headerEl,5,function() {
+          fadeIn(bodyEl,5,function() {
 
-            fadeIn(title1El,5,function() {
+            fadeIn(headerEl,5,function() {
 
-              fadeIn(text1El,5,function() {
+              fadeIn(title1El,5,function() {
 
-                type();
+                fadeIn(text1El,5,function() {
 
-                fadeIn(cardanologoEl,10,function() {
+                  fadeIn(scrolldown1El,5,function() {
 
-                  // console.log("done animating");
+                    fadeIn(moreinfo_solEl,5,function() {
+
+              
+
+                    });
+
+                  });
 
                 });
 
               });
-
-            });
+          });
 
           });
 
