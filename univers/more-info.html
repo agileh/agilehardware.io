@@ -81,10 +81,7 @@
       </nav>
     </header>
     <!-- Add your site or app content here -->
-    <div id="bodyel"
-      class="hero-full-container background-image-container white-text-container"
-      style="background-image: url('./assets/images/space2.jpg');opacity:0;"
-    >
+    <div id="bodyel" class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/space2_dark.jpg');opacity:0;">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
@@ -132,20 +129,22 @@
           </div>
         </div>
       </div>
+      
       <div id="moreinfo_solel" class="section-container moreinfo_sol">
         <div class="container ">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
 
-              <div class="wrapper">
+             
+              <div class="wrapper ">
 
                 <div id="title2el" class="clip-text4 clip-text_one">Why Cardano?</div>
 
               </div>
-
               <div class="text-center">
-                
+
                 <div class="moreinfo_who_text2">
+                  
                   Cardano was easy choice once we decided to work full time for a cryptocurrency.
                   However we also want to join the community because there is so much code which needs to be created here.
                   Not like Bitcoin where there is so much “noise”, “maximalism” and toxicity in general.
@@ -157,8 +156,26 @@
                   It’s inflation by mining is steady and almost everything what was promised was already achieved.
                   Maybe only things what Bitcoin ecosystem miss are.
                   True decentralization and true scaling – we believe that the Cardano will deliver both!
+
+                  <br><br>
+                  <div class="wrapper" style="padding:10px 10px 10px 10px;">
+
+                    <a id="more_blogel" href="" class="btn btn-primary btn-lg btn-more_blog">MORE INFO <i>(Blog)</i></a>
+  
+    
+                  </div>
+
+                  
                 </div>
 
+                <div class="wrapper ">
+
+                  <div id="" class="clip-text4 clip-text_one">Why stake with us?</div>
+  
+  
+                </div>
+
+<!-- 
                 <div class="wrapper" style="padding:10px 10px 10px 10px;">
 
                   <a id="more_blogel" href="" class="btn btn-primary btn-lg btn-more_blog">MORE INFO</a>
@@ -168,11 +185,31 @@
                   <a id="more_poolel" href="" class="btn btn-primary btn-lg btn-more_pool">&nbsp;&nbsp;STAKING POOL&nbsp; ➠</a>
   
   
-                </div>
+                </div> -->
              
               </div>
+              
             </div> 
+
+        </div>
+      </div>
     </div>
+
+
+
+
+    <div id="bodyel2" class="hero-full-container background-image-container white-text-container first_hidden" >
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="moreinfo_who_text2" style="margin-top:-90px;">
+              Because...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     <script type="text/javascript">
 
@@ -217,6 +254,7 @@
           var headerEl = document.getElementById('headerel');
 
           var bodyEl = document.getElementById('bodyel');
+          var bodyEl2 = document.getElementById('bodyel2');
 
           var title1El = document.getElementById('title1el');
           var text1El = document.getElementById('text1el');
@@ -235,6 +273,10 @@
 
                     fadeIn(moreinfo_solEl,5,function() {
 
+                      fadeIn(bodyEl2,5,function() {
+
+
+                    });
               
 
                     });

@@ -2829,7 +2829,7 @@ fieldset[disabled] .btn-link:hover {
   margin-left:33px;
   opacity: 1;
   border:2px solid rgba(0, 0, 0, .77);
-  float:left;
+
   z-index: 5;
 	font-size: 22px !important;
 	font-weight: 600 !important;
@@ -5386,9 +5386,9 @@ clip-text2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #34b3e9;
+  -webkit-text-stroke-color: white;
   transition: 0.1111s; 
-  background-position: center;
+  background-position: 390px 300px;
   opacity: 0;
 }
 
@@ -5402,15 +5402,15 @@ clip-text2 {
   margin: 0.225em;
   padding: 0.5em 0.75em;
   text-align: center;
-	margin-top: 60px;
+	/* margin-top: 60px; */
   /* Color fallback */
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #34b3e9;
+  -webkit-text-stroke-color: white;
   transition: 0.1111s; 
-  background-position: center;
+  background-position: 390px 300px;
 }
 
 .clip-text:before,
@@ -5522,7 +5522,8 @@ clip-text2 {
 	width: 100%;
 	height: 417px;
 	background: url(./assets/images/cardanologo2.png) no-repeat center;
-	opacity: 0.77;
+  opacity: 0.5;
+  transition: 1s;
 }
 
 .twitterlogo{
@@ -5613,9 +5614,11 @@ moreinfo_who {
 }
 
 .moreinfo_sol {
-	background-image: url(./assets/images/sol.jpg);
+	background-image: url(./assets/images/csolback.jpg);
   background-repeat: no-repeat;
   opacity: 0;
+  /* background-attachment: fixed; */
+  background-position: center;
   /* background-size: 100% auto;
 	z-index: 4; */
 }

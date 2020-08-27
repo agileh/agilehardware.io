@@ -81,9 +81,9 @@
       </nav>
     </header>
     <!-- Add your site or app content here -->
-    <div
+    <div id="bodyel"
       class="hero-full-container background-image-container white-text-container"
-      style="background-image: url('./assets/images/space.jpg');"
+      style="background-image: url('./assets/images/space.jpg');opacity:0;"
     >
       <div class="container">
         <div class="row">
@@ -176,6 +176,8 @@
           // type();
           movingBackgroundImage();
 
+          var bodyEl = document.getElementById('bodyel');
+
           var logoEl = document.getElementById('logoel');
           var moreEl = document.getElementById('moreel');
           var subtextEl = document.getElementById('subtextel');
@@ -192,7 +194,7 @@
           logoEl.addEventListener('mouseout', function() {
               
             moreEl.classList.remove("more_hover");
-            cardanologoEl.style.opacity = 0.77;
+            cardanologoEl.style.opacity = 0.55;
             
           });
 
@@ -204,21 +206,25 @@
 
           moreEl.addEventListener('mouseout', function() {
             
-          cardanologoEl.style.opacity = 0.77;
+          cardanologoEl.style.opacity = 0.55;
 
           });
 
-          fadeIn(logoEl,5,function() {
+          fadeIn(bodyEl,2,function() {
 
-            fadeIn(subtextEl,5,function() {
+            fadeIn(logoEl,4,function() {
 
-              fadeIn(moreEl,5,function() {
+              fadeIn(subtextEl,7,function() {
 
-                type();
+                fadeIn(moreEl,8,function() {
 
-                fadeIn(cardanologoEl,10,function() {
+                  type();
 
-                  // console.log("done animating");
+                  fadeIn(cardanologoEl,10,function() {
+
+                    // console.log("done animating");
+
+                  });
 
                 });
 
