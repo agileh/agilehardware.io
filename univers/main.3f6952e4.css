@@ -5411,6 +5411,11 @@ clip-text2 {
   -webkit-text-stroke-color: white;
   transition: 0.1111s; 
   background-position: 390px 300px;
+  
+}
+
+margin-top-55 {
+  margin-top: 55px !important;
 }
 
 .clip-text:before,
