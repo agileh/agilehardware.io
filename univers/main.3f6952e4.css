@@ -2784,9 +2784,11 @@ fieldset[disabled] .btn-link:hover {
   -webkit-text-stroke-color: white;
 }
 .btn-scrolldown {
-  opacity: 0;
+  text-align:center;
+  /* display: block; */
+  /* opacity: 0; */
   border:2px solid rgba(0, 0, 0, .77);
-  margin-top:33px;
+  margin-top:100px;
   z-index: 5;
 	font-size: 22px !important;
 	font-weight: 600 !important;
@@ -2805,12 +2807,12 @@ fieldset[disabled] .btn-link:hover {
   background-position: 50% 51%;
 }
 
-.btn-more_blog {
+.btn-more_announcements {
+  margin-top: 30px;
   margin-bottom: 30px;
   /* margin-left:33px; */
   opacity: 1;
   border:2px solid rgba(0, 0, 0, .77);
-
   z-index: 5;
 	font-size: 22px !important;
 	font-weight: 600 !important;
@@ -5358,16 +5360,14 @@ clip-text2 {
 }
 
 .clip-text4 {
-  /*font-family: "Oswald", sans-serif;*/
+  margin-top: 60px;
   font-size: 4.4em;
   font-weight: bold;
   line-height: 1; 
   position: relative;
   display: inline-block;
-  margin: 0.225em;
   padding: 0.5em 0.75em;
   text-align: center;
-	/* margin-top: 60px; */
   /* Color fallback */
   color: #fff;
   -webkit-background-clip: text;
@@ -5376,11 +5376,6 @@ clip-text2 {
   -webkit-text-stroke-color: white;
   transition: 0.1111s; 
   background-position: 390px 300px;
-  
-}
-
-margin-top-55 {
-  margin-top: 55px !important;
 }
 
 .clip-text:before,
@@ -5575,6 +5570,11 @@ moreinfo_who {
   /* background-color: rgba(0, 0, 0, .01); */
   z-index: 5;
   opacity: 1;
+  background-color: rgba(0, 0, 0, .55);
+  border-radius: 25px;
+  border-radius: 10px 15px 15px 10px;
+  border:7px solid rgba(0, 0, 0, .77);
+  height: 660px;
 }
 
 .moreinfo_sol {
