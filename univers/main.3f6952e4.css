@@ -2763,7 +2763,7 @@ fieldset[disabled] .btn-link:hover {
   border-radius: 0;
 	font-weight:bold;
 }
-.btn-more {
+.btn-more_info {
   border:2px solid rgba(0, 0, 0, .77);
   border-radius: 15px 15px 15px 15px;
   z-index: 5;
@@ -2779,9 +2779,16 @@ fieldset[disabled] .btn-link:hover {
   transition: 0.2111s; 
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
 }
-.btn-more:hover {
+.btn-more_info:hover {
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+  border:2px solid rgba(255, 255, 255, .77);
+}
+.more_info_hover {
+  border:2px solid rgba(255, 255, 255, .77);
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  background: url(./assets/images/electronics.jpg) no-repeat 83%;
 }
 .btn-more {
   text-align:center;
