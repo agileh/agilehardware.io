@@ -2842,6 +2842,9 @@ fieldset[disabled] .btn-link:hover {
 .color_to_my_blue {
   color:#34b3e9;
 }
+.color_to_my_blue_light {
+  color:#8ddafc;
+}
 .btn-group-sm > .btn,
 .btn-sm {
   padding: 5px 10px;
