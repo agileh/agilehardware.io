@@ -2783,19 +2783,20 @@ fieldset[disabled] .btn-link:hover {
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
-.btn-scrolldown {
+.btn-more {
   text-align:center;
   /* display: block; */
   /* opacity: 0; */
   border:2px solid rgba(0, 0, 0, .77);
-  margin-top:100px;
+  /* margin-left: 0em; */
+  margin-top: 2em;
   z-index: 5;
 	font-size: 22px !important;
 	font-weight: 600 !important;
   color:white !important;
   padding-top: 3px !important;
-  width: 116px;
-  height: 60px;
+  width: 122px;
+  height: 44px;
   transition: 0.1111s;
   background-color: black;
   border-radius: 15px 15px 15px 15px;
@@ -2803,7 +2804,7 @@ fieldset[disabled] .btn-link:hover {
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
 }
 
-.btn-scrolldown:hover { 
+.btn-more:hover { 
   background-position: 50% 51%;
 }
 
@@ -5567,14 +5568,31 @@ moreinfo_who {
   line-height: 1.9;
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
   display: block;
-  /* background-color: rgba(0, 0, 0, .01); */
+  margin-top: 40px;
+  z-index: 5;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .55);
+  border-radius: 25px;
+  border-radius: 10px 15px 15px 10px;
+  border: 7px solid rgba(0, 0, 0, .77);
+  height: 600px; 
+  padding-top: 13px;
+}
+
+.moreinfo_who_text3 {
+  font-size: 1.5em;
+  color:white;
+  font-weight: 300;
+  line-height: 1.9;
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
+  display: block;
+  margin-top: 50px;
   z-index: 5;
   opacity: 1;
   background-color: rgba(0, 0, 0, .55);
   border-radius: 25px;
   border-radius: 10px 15px 15px 10px;
   border:7px solid rgba(0, 0, 0, .77);
-  height: 660px;
 }
 
 .moreinfo_sol {
@@ -5599,6 +5617,7 @@ moreinfo_who {
   height: 323px;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 55px;
 }
 
 #subfooter {
