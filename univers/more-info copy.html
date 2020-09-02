@@ -43,10 +43,7 @@
 
     <title>Agile Hardware Cardano Staking Pool</title>
 
-    <link href="./assets/css/main.css" rel="stylesheet"/>
-
-    <link rel="stylesheet" type="text/css" href="./assets/css/full-page-scroll.min.css"/>
-
+    <link href="./main.3f6952e4.css" rel="stylesheet" />
   </head>
 
   <body class="minimal"  style="background-color: black;">
@@ -84,9 +81,7 @@
       </nav>
     </header>
     <!-- Add your site or app content here -->
-  <div id="bodyel" class="scroll-container hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/space2_dark.jpg');">
-      
-    <section>
+    <div id="bodyel" class="hero-full-container background-image-container white-text-container first_hidden" style="background-image: url('./assets/images/space2_dark.jpg');">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
@@ -94,7 +89,7 @@
 
               <div class="wrapper">
 
-                <div id="headerel" class="clip-text2 clip-text_one">&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+                <div id="headerel" class="clip-text2 clip-text_one first_hidden">&nbsp;&nbsp;&nbsp;&nbsp;</div> 
               
               </div>
 
@@ -120,15 +115,15 @@
                     We love how active the development of Cardano is and this is our first step into the ecosystem.
                   </div>
 
+								<a id="scrolldown1el" href="" class="btn btn-primary btn-lg btn-more first_hidden">MORE</a>
+
                 </div>
               </div>
 						</div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section>
+      
       <div id="moreinfo_solel" class="section-container moreinfo_sol">
         <div class="container ">
           <div class="row">
@@ -161,32 +156,41 @@
                   The problem is that almost everything what was promised was already achieved.
                   Maybe only things that Bitcoin ecosystem miss are true decentralization and true scaling – we believe that Cardano will deliver both!
 
+
+                  <div class="wrapper">
+
+                    <a id="scrolldown1el" href="" class="btn btn-primary btn-lg btn-more">MORE</a>
+
+                    <!-- <a id="announcements_link" href="" class="btn btn-primary btn-lg btn-more_announcements">MORE INFO</a>
+   -->
+    
+   
+                  </div> 
+
+                  
                 </div>
                 
+                <div class="wrapper">
+                  
+                  <div class="clip-text4 clip-text_one">
+                    
+                    Why stake with us?
+                  </div>
+  
+  
+                </div>
               </div>
             </div> 
           </div>
         </div>
       </div>
-    </section>
 
-    <section>
       <div class="row">
         <div class="col-sm-12 section-container-spacer">
-
-          <div class="wrapper">
-                  
-            <div class="clip-text4 clip-text_one">
-              
-              Why stake with us?
-            </div>
-
-
-          </div>
   
           <div class="wrapper container">
 
-            <div id="becausetext">
+            <div id="becausetext" class="first_hidden">
               <div class="clip-text4 clip-text_one floatleftand20pxtext">●</div>
               You can track our progress of the development of this site. Android app and more. We are pushing commits to the github repository almost everyday. The code will be open source no matter what. This is how we roll.
             
@@ -195,10 +199,8 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <section>
-      <div id="footerel" class="container">
+      <div id="footerel" class="container first_hidden">
         <div class="moreinfo_who_text3">
           Check out our:
           
@@ -214,26 +216,91 @@
             </div>
 
           </div>
+  
         </div>
+
       </div>
-    </section>
+      
+    </div>
+  
+    <script type="text/javascript">
 
-  </div>
-<!--   
-  "Fullpage Scrolling with Vanilla JavaScript" from https://github.com/amendoa/fullPageScrollPureJS
--->
-  <script src="./assets/js/full-page-scroll.min.js"></script>
-  <script type="text/javascript">
-    new fullScroll({
-      mainElement: "bodyel",
-      displayDots: true,
-      dotsPosition: "left",
-      animateTime: 0.7,
-      animateFunction: "ease",
-    });
-  </script>
+      /*
+        Fade-in function based of "Fade HTML element with raw javascript" https://stackoverflow.com/a/2695777 
+        THX kennebec (https://stackoverflow.com/users/80860/kennebec)
+      */
+      function fadeIn(elem, speed,callback){
+          if(elem.style){
+              elem.style.opacity= '0';
+          }
+          window.fadetimer= setInterval(function(){
+              elem.style.opacity= +(elem.style.opacity)+.02;
 
-  <!-- <script type="text/javascript" src="./assets/js/main.js"></script> -->
+              if(elem.style.opacity> 1){
+                  clearInterval(fadetimer);
+                  callback();
+              }
+              
+          
+          },
+          speed);
+      }
+
+      document.addEventListener("DOMContentLoaded", function (event) {
+          
+          movingBackgroundImage();
+
+          var headerEl = document.getElementById('headerel');
+
+          var bodyEl = document.getElementById('bodyel');
+     
+          var footerEl = document.getElementById('footerel');
+
+          var title1El = document.getElementById('title1el');
+          var text1El = document.getElementById('text1el');
+          var scrolldown1El = document.getElementById('scrolldown1el');
+          var moreinfo_solEl = document.getElementById('moreinfo_solel');
+
+          var becausetextEl = document.getElementById('becausetext');
+
+          fadeIn(bodyEl,5,function() {
+
+            fadeIn(headerEl,5,function() {
+
+              fadeIn(title1El,5,function() {
+
+                fadeIn(text1El,5,function() {
+
+                  fadeIn(scrolldown1El,5,function() {
+
+                    fadeIn(moreinfo_solEl,5,function() {
+
+                      fadeIn(becausetextEl,5,function() {
+
+                        fadeIn(footerEl,5,function() {
+
+
+                        });
+
+                      });
+
+                    });
+
+                  });
+
+                });
+
+              });
+
+            });
+
+          });
+
+      });
+
+    </script>
+
+    <script type="text/javascript" src="./main.70a66962.js"></script>
 
   </body>
 </html>
