@@ -1,8 +1,10 @@
-@import url(
+/* @import url(
   https://fonts.googleapis.com/css?family=Roboto:900|Roboto + Mono:300,
   400,
   700
-);
+); */
+
+@import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css); /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -10,7 +12,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: "Expletus Sans",sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -266,7 +268,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  font-family: Roboto Mono, Helvetica, Arial, sans-serif;
+  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
   font-size: 11px;
   line-height: 1.78;
   color: #000;
@@ -363,7 +365,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Roboto Mono, Helvetica, Arial, sans-serif;
+  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   color: #000;
@@ -2769,7 +2771,7 @@ fieldset[disabled] .btn-link:hover {
   z-index: 5;
   position: absolute;
 	font-size: 22px !important;
-	margin-top: -221px;
+	margin-top: -231px;
 	margin-left: -93px;
 	font-weight: 600 !important;
   color:white !important;
@@ -4845,7 +4847,7 @@ body.minimal {
   height: 100vh;
 }
 .hero-full-container h1 {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
   font-weight: 900;
 }
 .hero-full-container .hero-full-wrapper {
@@ -4999,7 +5001,7 @@ h3 {
   margin-bottom: 20px;
 }
 blockquote {
-  font-family: Roboto Mono, Helvetica, Arial, sans-serif;
+  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
   border: none;
   padding-left: 0;
   padding-right: 0;
@@ -5297,7 +5299,7 @@ textarea {
 
 /* Clip text element */
 .clip-text {
-  /*font-family: "Oswald", sans-serif;*/
+  font-family: "Oswald", sans-serif;
   font-size: 5.5em;
   font-weight: bold;
   line-height: 1;
@@ -5318,9 +5320,6 @@ textarea {
   background-position: center;
 }
 .clip-text:hover {
-	/* Add the blur effect */
-  /* filter: blur(1px);
-  -webkit-filter: blur(1px); */
   text-shadow:1px 1px 10px #fff, 1px 1px 10px  rgba(255,255,255, 0.01);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5329,6 +5328,7 @@ textarea {
 }
 
 clip-text2 {
+  font-family: "Oswald", sans-serif;
   font-size: 5.5em;
   font-weight: bold;
   line-height: 1;
@@ -5349,7 +5349,7 @@ clip-text2 {
 }
 
 .clip-text3 {
-  /*font-family: "Oswald", sans-serif;*/
+  font-family: "Oswald", sans-serif;
   font-size: 4.4em;
   font-weight: bold;
   line-height: 1; 
@@ -5370,6 +5370,7 @@ clip-text2 {
 }
 
 .clip-text4 {
+  font-family: "Oswald", sans-serif;
   /* margin-top: 60px; */
   font-size: 4.4em;
   font-weight: bold;
@@ -5439,7 +5440,7 @@ clip-text2 {
 }
 
 .subtext {
-	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
 	font-size: 2.4em;
   font-weight: bold;
   line-height: 1;
@@ -5493,7 +5494,7 @@ clip-text2 {
 .cardanologo{
 	position: absolute;
 	z-index: 4;
-	margin-top: -410px;
+	margin-top: -420px;
 	width: 100%;
 	height: 417px;
 	background: url(../images/cardanologo2.png) no-repeat center;
@@ -5653,3 +5654,151 @@ moreinfo_who {
 .padding_top_20px {
   padding-top: 20px;
 }
+
+/* 
+
+Progress bar code from: https://css-tricks.com/html5-progress-element/ THX Pankaj Parashar! https://pankajparashar.com/
+
+} */
+
+/* Styling an indeterminate progress bar */
+
+progress:not(value) {
+	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+}
+
+/* Styling the determinate progress element */
+
+progress[value] {
+  float: left;
+	/* Get rid of the default appearance */
+	appearance: none;
+	
+	/* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+	border: none;
+	
+	/* Add dimensions */
+	width: 100%; height: 10px;
+	
+	/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+	  background-color: whiteSmoke;
+	  border-radius: 3px;
+	  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+	
+	/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+	color: royalblue;
+	
+	position: relative;
+	margin: 0 0 1.5em; 
+}
+
+/*
+Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
+-webkit-progress-bar -> To style the progress element container
+-webkit-progress-value -> To style the progress element value.
+*/
+
+progress[value]::-webkit-progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+	position: relative;
+	
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius:3px;
+	
+	/* Let's animate this */
+	animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+/* Let's spice up things little bit by using pseudo elements. */
+
+progress[value]::-webkit-progress-value:after {
+	/* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+	content: '';
+	position: absolute;
+	
+	width:5px; height:5px;
+	top:7px; right:7px;
+	
+	background-color: white;
+	border-radius: 100%;
+}
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+
+progress[value]::-moz-progress-bar {
+	/* Gradient background with Stripes */
+	background-image:
+	-moz-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -moz-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #f44);
+	
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius:3px;
+	
+	/* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
+}
+
+/* Fallback technique styles */
+.progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+	/* Dimensions should be similar to the parent progress element. */
+	width: 100%; height:10px;
+}
+
+.progress-bar span {
+	background-color: royalblue;
+	border-radius: 3px;
+	
+	display: block;
+	text-indent: -9999px;
+}
+
+
+#stats_saturation_container p[data-value] { 
+  display: block;
+  /* float: left; */
+  position: absolute; 
+  
+}
+
+/* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
+
+#stats_saturation_container p[data-value]:after {
+	content: attr(data-value) '%';
+	position: absolute; right:0;
+}
+
+
+.stats_saturation::-webkit-progress-value 
+{
+	/* Gradient background with Stripes */
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #690);
+}
+

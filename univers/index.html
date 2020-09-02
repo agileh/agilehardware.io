@@ -69,11 +69,62 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" style="height:20px;">
               <li><a class="logo grayscale" href="./index.html" title=""></a></li>
               <li><a href="./more-info.html" title="">About</a></li>
               <li><a href="./contact.html" title="">Contact</a></li>
               <li><a href="./components.html" title="">Stats</a></li>
+              
+              <li>
+                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-tachometer" style="color:white;"></i>ROA (30d): 5.67%</b>
+                
+              </li>
+              <li>
+                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-building" style="color:white;"></i>Pledge: 5000 ₳</b>
+                
+              </li>
+              <li>
+                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-minus" style="color:white;"></i>Margin: 3%</b>
+                
+              </li>
+              <li>
+                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-minus" style="color:white;"></i>Fixed Cost: 333 ₳</b>
+                
+              </li>
+
+              <li>
+                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-users" style="color:white;"></i>Delegators: 33</b>
+                
+              </li>
+              <li>
+                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-th" style="color:white;"></i> Lifetime Blocks: 333</b>
+                
+              </li>
+              <li>
+
+                  <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;">Saturation: 35%</b>
+             
+
+
+              </li>
+
+              <li>
+
+                <div id="stats_saturation_container" style="width:55px;padding-top:6px;">
+                  <!-- <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"></b> -->
+             
+
+                  <progress max="100" value="35" class="stats_saturation" style="float:left;">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                    <div class="progress-bar">
+                      <span style="width: 35%">35%</span>
+                    </div>
+                  </progress>	
+
+
+                </div>
+
+              </li>
             </ul>
           </div>
         </div>
@@ -89,7 +140,7 @@
           <div class="col-xs-12">
             <div class="hero-full-wrapper">
 
-              <div class="wrapper">
+              <div class="wrapper" style="padding-top: 15px;">
 
                 <div id="logoel" class="clip-text clip-text_one first_hidden">Agile Hardware</div>
 
@@ -210,6 +261,27 @@
           cardanologoEl.style.opacity = 0.55;
 
           });
+
+          var request = new XMLHttpRequest();
+          request.open('GET', 'https://js.adapools.org/pools/71efddeabf5dd8211853a5ed30548391ccb54fa3b55e5828db9afee6/summary.json', true);
+
+          request.onload = function() {
+            if (this.status >= 200 && this.status < 400) {
+              // Success!
+              var data = JSON.parse(this.response);
+              console.log(data);
+            } else {
+              // We reached our target server, but it returned an error
+
+            }
+          };
+
+          request.onerror = function() {
+            // There was a connection error of some sort
+          };
+
+          request.send();
+
 
           fadeIn(bodyEl,2,function() {
 
