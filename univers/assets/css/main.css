@@ -5642,6 +5642,14 @@ moreinfo_who {
   width: 100%;
 }
 
+#becausetext_container {
+  background-image: url('../images/csoloriginal.jpg');
+  height: 300px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
 .floatleftand20pxtext {
   float: left;
   font-size: 20px;
