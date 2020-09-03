@@ -75,46 +75,40 @@
               <li><a href="./contact.html" title="">Contact</a></li>
               <li><a href="./components.html" title="">Stats</a></li>
               
-              <li>
-                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-tachometer" style="color:white;"></i>ROA (30d): 5.67%</b>
-                
+              <li class="menu_more_stats">
+                <b><i class="fa fa-building" style="color:white;"></i>Pledge: <b class="color_to_my_blue_light">5000 ₳</b></b>
               </li>
-              <li>
-                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-building" style="color:white;"></i>Pledge: 5000 ₳</b>
-                
+              <li class="menu_more_stats">
+                <b><i class="fa fa-minus" style="color:white;"></i>Margin: <b class="color_to_my_blue_light">3%</b></b>
               </li>
-              <li>
-                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-minus" style="color:white;"></i>Margin: 3%</b>
-                
-              </li>
-              <li>
-                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-minus" style="color:white;"></i>Fixed Cost: 333 ₳</b>
-                
+              <li class="menu_more_stats">
+                <b><i class="fa fa-minus" style="color:white;"></i>Fixed Cost: <b class="color_to_my_blue_light">333 ₳</b></b>
               </li>
 
-              <li>
-                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-users" style="color:white;"></i>Delegators: 33</b>
-                
-              </li>
-              <li>
-                <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"><i class="fa fa-th" style="color:white;"></i> Lifetime Blocks: 333</b>
-                
-              </li>
-              <li>
-
-                  <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;">Saturation: 35%</b>
-             
-
-
+              <li class="menu_more_stats">
+                <b><i class="fa fa-tachometer" style="color:white;"></i>ROA (30d): <b class="color_to_my_blue_light">5.67%</b></b>
               </li>
 
+              <!-- <li>
+                <b class"menu_stats"><i class="fa fa-users" style="color:white;"></i>Delegators: 33</b>
+              </li>
               <li>
+                <b class"menu_stats"><i class="fa fa-th" style="color:white;"></i> Lifetime Blocks: 333</b>
+              </li> -->
 
-                <div id="stats_saturation_container" style="width:55px;padding-top:6px;">
+              <li class="menu_more_stats">
+
+                  <b>Saturation: <b class="color_to_my_blue_light">35%</b></b>
+    
+              </li>
+
+              <li class="menu_more_stats">
+
+                <div id="stats_saturation_container">
                   <!-- <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"></b> -->
              
 
-                  <progress max="100" value="35" class="stats_saturation" style="float:left;">
+                  <progress max="100" value="35" class="stats_saturation pull-left">
                     <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
                     <div class="progress-bar">
                       <span style="width: 35%">35%</span>
@@ -125,6 +119,7 @@
                 </div>
 
               </li>
+            
             </ul>
           </div>
         </div>
@@ -158,7 +153,7 @@
 
                   <span id="typed-strings" class="first_hidden">
                     <span><b class="color_to_my_blue">We are</b> software developers & open source evangelists!</span>
-                    <span><b class="color_to_my_blue">We are</b> cryptocurrency & ADA enthusiasts!</span>
+                    <span><b class="color_to_my_blue">We are</b> cryptocurrency & Cardano enthusiasts!</span>
                     <span><b class="color_to_my_blue">We are</b> aspiring smart contract developers!</span>
                     <span><b class="color_to_my_blue">We are</b> here to stay!</span>
                     <span><b class="color_to_my_blue">Join us and <i class="color_to_my_blue_light">&nbsp;stake with us!</i></b></span>
@@ -225,6 +220,18 @@
       }
 
       document.addEventListener("DOMContentLoaded", function (event) {
+
+        var menu_more_statsEls = document.querySelectorAll('.menu_more_stats');
+
+          menu_more_statsEls.forEach(
+            function(elem) {
+              elem.addEventListener('click', function(evt) {
+                //ga('send', 'event', 'button', 'visit', 'click_visit_zone1');
+                window.location.assign("http://www.w3schools.com");
+              }, true); // <-- the `true` allows this event to happen in the capture phase.
+            }
+          );
+
           // type();
           movingBackgroundImage();
 

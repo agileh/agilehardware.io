@@ -4860,7 +4860,8 @@ body.minimal {
 .hero-full-container .hero-full-wrapper .text-content {
   vertical-align: middle;
   display: table-cell;
-	font-size:0.44em;
+  width: 100%;
+	font-size:0.333em;
   padding-top:40px;
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
 
@@ -5546,6 +5547,7 @@ clip-text2 {
 
 .typed-cursor{
   color:#34b3e9 !important;
+  z-index: 5 !important;
 }
 
 moreinfo_who {
@@ -5775,7 +5777,11 @@ progress[value]::-moz-progress-bar {
 	display: block;
 	text-indent: -9999px;
 }
+#stats_saturation_container {
 
+
+width:55px;padding-top:6px;float:left;
+}
 
 #stats_saturation_container p[data-value] { 
   display: block;
@@ -5808,3 +5814,12 @@ progress[value]::-moz-progress-bar {
      -webkit-linear-gradient( left, #09c, #690);
 }
 
+.menu_more_stats {
+  color:white !important;
+  cursor: pointer;
+  float:left;
+  color:white !important;
+  margin-top:-2px;
+  margin-left:6px;
+  margin-right:6px;
+}
