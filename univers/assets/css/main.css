@@ -5358,7 +5358,8 @@ clip-text2 {
   margin: 0.225em;
   padding: 0.5em 0.75em;
   text-align: center;
-	margin-top: 88px;
+  margin-top:1.7em;
+	/* margin-top: 88px; */
   /* Color fallback */
   color: #fff;
   -webkit-background-clip: text;
@@ -5555,7 +5556,7 @@ moreinfo_who {
 }
 
 .moreinfo_who_text {
-  font-size: 1.5em;
+  font-size: 1.27em;
   color:white;
   font-weight: 300;
   line-height: 1.9;
@@ -5566,30 +5567,32 @@ moreinfo_who {
   border-radius: 25px;
   border-radius: 10px 15px 15px 10px;
   z-index: 5;
-  margin-top:33px;
+  /* margin-top:33px; */
+  margin-top:0.5em;
   border:7px solid rgba(0, 0, 0, .77);
 }
 
 .moreinfo_who_text2 {
-  font-size: 1.5em;
+  font-size: 1.27em;
   color:white;
   font-weight: 300;
   line-height: 1.9;
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
   display: block;
-  margin-top: 40px;
+  margin-top: 0.5em;
   z-index: 5;
   opacity: 1;
   background-color: rgba(0, 0, 0, .55);
   border-radius: 25px;
   border-radius: 10px 15px 15px 10px;
   border: 7px solid rgba(0, 0, 0, .77);
-  height: 600px; 
-  padding-top: 13px;
+  /* height: 600px;  */
+  height: 44%;
+  margin-top:0.2em;
 }
 
 .moreinfo_who_text3 {
-  font-size: 1.5em;
+  font-size: 1.27em;
   color:white;
   font-weight: 300;
   line-height: 1.9;
@@ -5609,17 +5612,12 @@ moreinfo_who {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
+  height: 100%;
   /* background-size: 100% auto;
   z-index: 4; */
 
 }
 
-#bodyel3 {
-  margin-top: -55px;
-  height: 222px;
-  width: 100%;
-  background-color: black;
-}
 
 #footerel {
   background-image: url('../images/footer_big.jpg');
@@ -5638,21 +5636,21 @@ moreinfo_who {
 #becausetext {
   color: white;
   float: left;
-  font-size: 1.5em;
+  font-size: 1.33em;
   width: 100%;
 }
 
 #becausetext_container {
   background-image: url('../images/csoloriginal.jpg');
-  height: 300px;
+  height: 333px;
   background-position: center top;
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 2em;
 }
 
-.floatleftand20pxtext {
+.becausetextpoint {
   float: left;
-  font-size: 20px;
+  /* font-size: 1.27em; */
 }
 
 .padding_top_60px {
