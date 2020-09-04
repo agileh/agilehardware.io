@@ -73,7 +73,7 @@
               <li><a class="logo grayscale" href="./index.html" title=""></a></li>
               <li><a href="./more-info.html" title="">About</a></li>
               <li><a href="./contact.html" title="">Contact</a></li>
-              <li><a href="./components.html" title="">Stats</a></li>
+              <li><a href="./components.html" title="">More</a></li>
               
               <li class="menu_more_stats">
                 <b><i class="fa fa-building" style="color:white;"></i>Pledge: <b class="color_to_my_blue_light">5000 ₳</b></b>
@@ -287,13 +287,16 @@
             // There was a connection error of some sort
           };
 
-          request.send();
+          // request.send(); ====================================================== TODO: PARSE JSON & update corresponding DOM elements..
+
+          // document.dispatchEvent(new Event("mouseenter"));
+          
 
 
           fadeIn(bodyEl,2,function() {
 
             fadeIn(logoEl,4,function() {
-
+              
               fadeIn(subtextEl,7,function() {
 
                 fadeIn(moreEl,8,function() {

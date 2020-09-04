@@ -54,7 +54,7 @@
     <div id="site-border-right"></div>
     <div id="site-border-top"></div>
     <div id="site-border-bottom"></div>
-    <!-- Add your content of header -->
+
     <header>
       <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container">
@@ -72,18 +72,63 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a class="logo" href="./index.html" title=""></a></li>
-              <li><a href="./works.html" title="">02 : Works</a></li>
-              <li><a href="./about.html" title="">03 : About me</a></li>
-              <li><a href="./contact.html" title="">04 : Contact</a></li>
-              <li><a href="./components.html" title="">05 : Components</a></li>
+            <ul class="nav navbar-nav" style="height:20px;">
+              <li><a class="logo grayscale" href="./index.html" title=""></a></li>
+              <li><a href="./more-info.html" title="">About</a></li>
+              <li><a href="./contact.html" title="">Contact</a></li>
+              <li><a href="./components.html" title="">More</a></li>
+              
+              <li class="menu_more_stats">
+                <b><i class="fa fa-building" style="color:white;"></i>Pledge: <b class="color_to_my_blue_light">5000 ₳</b></b>
+              </li>
+              <li class="menu_more_stats">
+                <b><i class="fa fa-minus" style="color:white;"></i>Margin: <b class="color_to_my_blue_light">3%</b></b>
+              </li>
+              <li class="menu_more_stats">
+                <b><i class="fa fa-minus" style="color:white;"></i>Fixed Cost: <b class="color_to_my_blue_light">333 ₳</b></b>
+              </li>
+
+              <li class="menu_more_stats">
+                <b><i class="fa fa-tachometer" style="color:white;"></i>ROA (30d): <b class="color_to_my_blue_light">5.67%</b></b>
+              </li>
+
+              <!-- <li>
+                <b class"menu_stats"><i class="fa fa-users" style="color:white;"></i>Delegators: 33</b>
+              </li>
+              <li>
+                <b class"menu_stats"><i class="fa fa-th" style="color:white;"></i> Lifetime Blocks: 333</b>
+              </li> -->
+
+              <li class="menu_more_stats">
+
+                  <b>Saturation: <b class="color_to_my_blue_light">35%</b></b>
+    
+              </li>
+
+              <li class="menu_more_stats">
+
+                <div id="stats_saturation_container">
+                  <!-- <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"></b> -->
+             
+
+                  <progress max="100" value="35" class="stats_saturation pull-left">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                    <div class="progress-bar">
+                      <span style="width: 35%">35%</span>
+                    </div>
+                  </progress>	
+
+
+                </div>
+
+              </li>
+            
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <!-- Add your site or app content here -->
+
   <div id="bodyel" class="scroll-container hero-full-container background-image-container" style="background-image: url('./assets/images/space2_dark.jpg');">
       
     <section>
@@ -91,12 +136,6 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="hero-full-wrapper">
-
-              <!-- <div class="wrapper">
-
-                <div id="headerel" class="clip-text2 clip-text_one">&nbsp;&nbsp;&nbsp;&nbsp;</div> 
-              
-              </div> -->
 
               <div class="wrapper">
 
@@ -109,16 +148,12 @@
                 <div class="moreinfo_who">
 
                   <div class="moreinfo_who_text">
-                    We are digital nomads, working on-the-go.
-                    We met in person many times but we collaborate exclusively on-line.
-                    Without personal contact we (Agile Hardware) wouldn’t exist for sure.
-                    We share common opinions, have been discussing cryptocurrencies many time and now we decided to act and join the best cryptocurrencies of them all – Cardano.
-                    We truly believe that engagement with academic world is the key to success.
-                    We are passionate but patient.
-                    We know that great things deserve as much time as necessary to manifest.
                     We are software engineers so we know from the first hand how hard is it to create effective, sustainable, multi platform and secure software.
-                    We love how active the development of Cardano is and this is our first step into the ecosystem.
-
+                    We decided that our journey to the world of decentralized money should begin with Cardano.
+                    We love how active the development of Cardano is and we truly believe that engagement with academic world is the key to success.
+                    We are passionate but patient.
+                    We know that great things deserve some to manifest.
+                    
                     <br>
                   <a id="scrolldown" href="#1" class="btn btn-primary btn-lg btn-more">MORE <br>▼</a>
                   </div>
@@ -133,7 +168,117 @@
     </section>
 
     <section>
-      <div id="moreinfo_solel" class="section-container moreinfo_sol">
+      <div class="container moreinfo_sol">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="hero-full-wrapper ">
+
+              <div class="wrapper">
+
+                <div class="clip-text3 clip-text_one">Bitcoin?</div>
+
+              </div>
+
+              <div class="wrapper" >
+
+                <div class="moreinfo_who">
+
+                  <div class="moreinfo_who_text">
+                    We were mining Bitcoin a little back in the 2016 with few ASICs.
+                    We were passionate about mining and about cryptocurrencies in general ever since.
+                    However seeing how it’s more and more unrealistic to mine at home was quite sad.
+                    Huge mining operations took the joy of mining from us.
+                    <!-- We knew that will happen since we were there when GPU mining and then FPGA mining became unprofitable. -->
+                    Mining by huge data centers with access to cheap electricity was inevitable.
+                    We are not “Bitcoin maximalists”, maybe simply because of the fact that we had to turn our ASICs off.
+                    After the DAO hack we felt strongly that “code is the law” should matter and that was first time we heard about Charles Hoskinson a we share his vision ever since.
+
+                    <br>
+                  <a id="scrolldown" href="#2" class="btn btn-primary btn-lg btn-more">MORE <br>▼</a>
+                  </div>
+
+
+                </div>
+              </div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="hero-full-wrapper background-image-container" style="background-image: url('./assets/images/space2_dark.jpg');">
+
+              <div class="wrapper">
+
+                <div class="clip-text3 clip-text_one">“Agile” Hardware?</div>
+
+              </div>
+
+              <div class="wrapper" >
+
+                <div class="moreinfo_who">
+
+                  <div class="moreinfo_who_text">
+                    We believe that hardware in general should be as “agile” as possible meaning that customizable matching any current needs and expectations easily and rapidly.
+                    This can be achieved by software -  the “brain” of the Hardware.
+                    Software shouldn’t be bounded in any way.
+                    Open source software is the way to go and we feel it deep in our hearts.
+                    There should be no black boxes, everyone should be able to look under the software’s hood – inner working meaning the code.
+                    In the ideal world even hardware, it’s production schemes and inner workings even the design should be open sourced.
+                    We believe that we are slowly getting there.
+                    <br>
+                  <a id="scrolldown" href="#3" class="btn btn-primary btn-lg btn-more">MORE <br>▼</a>
+                  </div>
+
+
+                </div>
+              </div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container" >
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="hero-full-wrapper">
+
+              <div class="wrapper" style="padding-top: 11em;">
+
+                <div class="moreinfo_who">
+
+                  <div class="moreinfo_who_text" >
+                    Bitcoin is an example how the hardware became more agile, open and useful.
+                    It wasn’t possible to transfer value – digital gold mined by miners -  in truly sovereign way before it’s inception.
+                    Bitcoin is digital gold and it’s beautiful.
+                    Decentralization is the key element of  sovereign – unstoppable – cryptocurrency.
+                    However it’s level is fluctuating in time. Decentralization itself is complex and multifaceted concept that spans fiscal, political, and administrative dimensions.
+                    Now with the creation of the Bitcoin it including informatics, cryptography etc.
+                    This is in our humble opinion proof that the creation of souvereign and truly decentralized “crypto” economy is possible.
+                    Cardano is confidently aiming there.
+                    <br>
+                  <a id="scrolldown" href="#4" class="btn btn-primary btn-lg btn-more">MORE <br>▼</a>
+                  </div>
+
+
+                </div>
+              </div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-container moreinfo_sol">
         <div class="container ">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
@@ -166,7 +311,7 @@
 
                   <br>
 
-                <a id="scrolldown" href="#2" class="btn btn-primary btn-lg btn-more">MORE <br>▼</a>
+                <a id="scrolldown" href="#5" class="btn btn-primary btn-lg btn-more">MORE <br>▼</a>
 
                 </div>
 
@@ -197,8 +342,6 @@
               <br>
               <div class="pull-left"><b class="color_to_my_blue_light">● </b> We are new but we are eager to prove we are here to stay!</div>
               
-              
-              
               <div  style="margin-top:5em;text-align: center;">
                 
                 <div style="margin-bottom: 5px;">
@@ -228,7 +371,7 @@
 
           </div>
 
-          <a id="scrolldown" href="#3" class="btn btn-primary btn-lg btn-more">MORE <br>▼</a>
+          <a id="scrolldown" href="#6" class="btn btn-primary btn-lg btn-more">MORE <br>▼</a>
         </div>
       </div>
     </section>
@@ -286,7 +429,7 @@
     });
   </script>
 
-  <!-- <script type="text/javascript" src="./assets/js/main.js"></script> -->
+  <script type="text/javascript" src="./assets/js/main.js"></script>
 
   </body>
 </html>
