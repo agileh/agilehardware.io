@@ -3596,7 +3596,7 @@ tbody.collapse.in {
 }
 .navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse {
-  max-height: 340px;
+  max-height: 500px;
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-bottom .navbar-collapse,
@@ -5298,8 +5298,13 @@ textarea {
   background-color: #fff;
 }
 
-.clip-top_margin-xs {
+.clip-top_margin-x {
   margin-top: 1em;
+  display: block;
+}
+
+.clip-top_margin-xs {
+  margin-top: 4em;
   display: block;
 }
 
@@ -5632,15 +5637,11 @@ moreinfo_who {
   line-height: 1.9;
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
   display: block;
-  margin-top: 3em;
-  /* margin-bottom: 30px; */
-  /* height: 222px; */
+  margin-top: 1em;
   z-index: 5;
   opacity: 1;
   background-color: rgba(0, 0, 0, .75);
-  /* border-radius: 25px;
-  border-radius: 10px 15px 15px 10px;
-  border:7px solid rgba(0, 0, 0, .77); */
+
 }
 
 .moreinfo_sol {
@@ -5656,7 +5657,7 @@ moreinfo_who {
   height: 323px;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 55px;
+ 
 }
 
 #subfooter {
