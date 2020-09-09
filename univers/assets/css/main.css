@@ -5303,6 +5303,16 @@ textarea {
   display: block;
 }
 
+.clip-top_margin-xx {
+  margin-top: 2em;
+  display: block;
+}
+
+.clip-top_margin-xxx {
+  margin-top: 3em;
+  display: block;
+}
+
 .clip-top_margin-xs {
   margin-top: 4em;
   display: block;
@@ -5490,13 +5500,9 @@ clip-text2 {
   width: 246px;
   height: 55px;
   background: url(../images/logo246x55.png) no-repeat center center;
-  /* background-size: contain; */
 	border-left-width: 19px;
   border-left-style: solid;
   border-left-color: black;
-  /* border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: black; */
 }
 
 .logo:hover {
@@ -5848,4 +5854,37 @@ width:55px;padding-top:6px;float:left;
   justify-content: center;
   align-items: flex-end;
   color:white;
+}
+
+#page-border-bottom,
+#page-border-left,
+#pageborder-right,
+#page-border-top {
+  background-image: url(../images/electronics.jpg);
+  position: fixed;
+  z-index: 0;
+}
+#page-border-left,
+#page-border-right {
+  top: 10px;
+  bottom: 10px;
+  width: 6px;
+}
+#page-border-left {
+  left: 10px;
+}
+#page-border-right {
+  right: 10px;
+}
+#page-border-bottom,
+#page-border-top {
+  left: 10px;
+  right: 10px;
+  height: 6px;
+}
+#page-border-top {
+  top: 10px;
+}
+#page-border-bottom {
+  bottom: 10px;
 }
