@@ -98,7 +98,7 @@
 
               <li><a href="./more-info.html" title="">About</a></li>
               <li><a href="./contact.html" title="">Contact</a></li>
-              <li><a href="./components.html" title="">More</a></li>
+              <li><a href="./projects.html" title="">Projects</a></li>
 
               
 
@@ -109,7 +109,7 @@
               </div>
               
               <li class="menu_more_stats">
-                <b><i class="fa fa-building" style="color:white;"></i>Pledge: <b class="color_to_my_blue_light">5000 ₳</b></b>
+                <i class="fa fa-building menu_more_stats_text"></i><b class="menu_more_stats_text">Pledge:</b> <b class="color_to_my_blue_light">5000 ₳</b>
               </li>
               
               <div class="visible-xs clip-top_margin-x">
@@ -119,7 +119,7 @@
               </div>
 
               <li class="menu_more_stats">
-                <b><i class="fa fa-minus" style="color:white;"></i>Margin: <b class="color_to_my_blue_light">3%</b></b>
+                <i class="fa fa-minus menu_more_stats_text"></i><b class="menu_more_stats_text">Margin:</b> <b class="color_to_my_blue_light">3%</b>
               </li>
 
               <div class="visible-xs clip-top_margin-x">
@@ -129,7 +129,7 @@
               </div>
 
               <li class="menu_more_stats">
-                <b><i class="fa fa-minus" style="color:white;"></i>Fixed Cost: <b class="color_to_my_blue_light">333 ₳</b></b>
+                <i class="fa fa-minus menu_more_stats_text"></i><b class="menu_more_stats_text">Fixed Cost:</b> <b class="color_to_my_blue_light">333 ₳</b>
               </li>
 
               <div class="visible-xs clip-top_margin-x">
@@ -139,7 +139,7 @@
               </div>
 
               <li class="menu_more_stats">
-                <b><i class="fa fa-tachometer" style="color:white;"></i>ROA (30d): <b class="color_to_my_blue_light">5.67%</b></b>
+                <i class="fa fa-tachometer menu_more_stats_text"></i><b class="menu_more_stats_text">ROA (30d):</b> <b class="color_to_my_blue_light">5.67%</b>
               </li>
 
               <!-- <li>
@@ -157,7 +157,7 @@
 
               <li class="menu_more_stats">
 
-                  <b>Saturation: <b class="color_to_my_blue_light">35%</b></b>
+                  <b class="menu_more_stats_text">Saturation:</b> <b class="color_to_my_blue_light">35%</b>
     
               </li>
 
@@ -563,7 +563,7 @@
                   
                 </div>
                 <div style="padding-top:-4px;">
-                <i class="fa fa-minus" style="color:white;"></i>Margin: <b class="color_to_my_blue_light">3%</b>
+                  <i class="fa fa-minus" style="color:white;"></i>Margin: <b class="color_to_my_blue_light">3%</b>
                 </div>
                
                 <div style="padding-top:-4px;" >
@@ -684,6 +684,8 @@
 
       var menu_more_statsEls = document.querySelectorAll('.menu_more_stats');
 
+      var menu_more_stats_highlightEls = document.querySelectorAll('.menu_more_stats_text'); 
+
       menu_more_statsEls.forEach(
         function(elem) {
           elem.addEventListener('click', function(evt) {
@@ -692,20 +694,22 @@
           }, true); // <-- the `true` allows this event to happen in the capture phase.
 
           elem.addEventListener('mouseover', function() {
-            menu_more_statsEls.forEach(
+            menu_more_stats_highlightEls.forEach(
               function(el) {
-                if (el.firstChild) {
-                  el.firstChild.classList.add("color_to_my_blue");
+                if (el) {
+                  el.classList.add("color_to_my_blue");
                 }
                 // 
-                console.log(el.firstChild);
             });
           });
 
           elem.addEventListener('mouseout', function() {
-            menu_more_statsEls.forEach(
+            menu_more_stats_highlightEls.forEach(
               function(el) {
-                // el.firstChild.classList.remove("color_to_my_blue");
+                if (el) {
+                  el.classList.remove("color_to_my_blue");
+                }
+                // 
             });
           });
          

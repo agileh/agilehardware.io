@@ -2771,7 +2771,7 @@ fieldset[disabled] .btn-link:hover {
   z-index: 5;
   position: absolute;
   font-size: 22px !important;
-  margin-top: -231px;
+  margin-top: -100px;
   margin-left: -93px;
   font-weight: 600 !important;
   color: white !important;
@@ -5504,7 +5504,7 @@ clip-text2 {
 
 .subtext {
   font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
-  font-size: 2.4em;
+  font-size: 2.1em;
   font-weight: bold;
   line-height: 1;
   color: white;
@@ -5512,7 +5512,7 @@ clip-text2 {
   position: relative;
   display: inline-block;
   text-align: center;
-  margin-top: -10px;
+  margin-top: -11px;
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black; */
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 4px 0 black,
@@ -5531,7 +5531,7 @@ clip-text2 {
 }
 
 .logo {
-  margin-top: -21px;
+  /* margin-top: -25px; */
   display: block;
   width: 246px;
   height: 55px;

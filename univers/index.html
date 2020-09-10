@@ -70,10 +70,10 @@
 
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav" style="height:20px;">
-              <li><a class="logo" href="./index.html" title=""></a></li>
+              <li><a class="logo grayscale" href="./index.html" title=""></a></li>
               <li><a href="./more-info.html" title="">About</a></li>
               <li><a href="./contact.html" title="">Contact</a></li>
-              <li><a href="./components.html" title="">More</a></li>
+              <li><a href="./projects.html" title="">Projects</a></li>
               
               <li class="menu_more_stats">
                 <b><i class="fa fa-building" style="color:white;"></i>Pledge: <b class="color_to_my_blue_light">5000 ₳</b></b>
@@ -143,40 +143,43 @@
 
 							<div class="wrapper">
 
-                <div id="subtextel" class="subtext first_hidden">Cardano Stake Pool</div>
+                <div id="subtextel" class="subtext first_hidden clip-text-background">Cardano Stake Pool</div>
 
             	</div>
 
               <h1><h1/>
 
-              <div class="text-content ">
+              <div class="visible-xs clip-top_margin-x">&nbsp;</div>
+              <div class="visible-sm clip-top_margin-xx">&nbsp;</div>
+              <div class="visible-md clip-top_margin-xxx">&nbsp;</div>
+              <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
-                  <span id="typed-strings" class="first_hidden">
+
+                <div  id="typing-text-content"  class="text-content clip-text-background first_hidden ">
+
+                  <span id="typed-strings">
                     <span><b class="color_to_my_blue">We are</b> software developers & open source evangelists!</span>
                     <span><b class="color_to_my_blue">We are</b> cryptocurrency & Cardano enthusiasts!</span>
                     <span><b class="color_to_my_blue">We are</b> aspiring smart contract developers!</span>
                     <span><b class="color_to_my_blue">We are</b> here to stay!</span>
                     <span><b class="color_to_my_blue">Join us and <i class="color_to_my_blue_light">&nbsp;stake with us!</i></b></span>
                   </span>
+
                   <span class="index_message" id="typed"></span>
-                  <span>
 
-                  </span>
+                </div>
 
-                </h1>
 
-              </div>
+							
 
-							<div class="wrapper">
+
+            </div>
+            
+            <div class="wrapper">
                 
-								<a id="moreel" href="./more-info.html" class="btn btn-primary btn-lg btn-more_info first_hidden">&nbsp;&nbsp;MORE INFO&nbsp; ➠</a>
+              <a id="moreel" href="./more-info.html" class="btn btn-primary btn-lg btn-more_info first_hidden">&nbsp;&nbsp;MORE INFO&nbsp; ➠</a>
 
-                <div id="cardanologoel" class="cardanologo first_hidden"></div>
-
-            	</div>
-
-
-						</div>
+            </div>
 
           </div>
         </div>
@@ -236,38 +239,24 @@
           movingBackgroundImage();
 
           var bodyEl = document.getElementById('bodyel');
-
           var logoEl = document.getElementById('logoel');
-          var moreEl = document.getElementById('moreel');
           var subtextEl = document.getElementById('subtextel');
-          var cardanologoEl = document.getElementById('cardanologoel');
+          var textcontentEl = document.getElementById('typing-text-content');
+          var moreEl = document.getElementById('moreel');
           
-
           logoEl.addEventListener('mouseover', function() {
 
             moreEl.classList.add("more_info_hover");
-            cardanologoEl.style.opacity = 1;
-
+         
           });
 
           logoEl.addEventListener('mouseout', function() {
               
             moreEl.classList.remove("more_info_hover");
-            cardanologoEl.style.opacity = 0.55;
-            
+        
           });
 
-          moreEl.addEventListener('mouseover', function() {
-
-          cardanologoEl.style.opacity = 1;
-
-          });
-
-          moreEl.addEventListener('mouseout', function() {
-            
-          cardanologoEl.style.opacity = 0.55;
-
-          });
+         
 
           var request = new XMLHttpRequest();
           request.open('GET', 'https://js.adapools.org/pools/71efddeabf5dd8211853a5ed30548391ccb54fa3b55e5828db9afee6/summary.json', true);
@@ -299,13 +288,11 @@
               
               fadeIn(subtextEl,3,function() {
 
-                fadeIn(moreEl,5,function() {
+                fadeIn(textcontentEl,5,function() {
 
-                  type();
+                  fadeIn(moreEl,5,function() {
 
-                  fadeIn(cardanologoEl,7,function() {
-
-                    // console.log("done animating");
+                    type();
 
                   });
 
