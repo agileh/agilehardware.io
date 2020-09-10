@@ -12,7 +12,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: "Expletus Sans",sans-serif;
+  font-family: "Expletus Sans", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -2458,12 +2458,12 @@ fieldset[disabled] .btn-default:hover {
 }
 /* Background image from https://www.123rf.com/photo_61582630_closeup-electronic-circuit-board-background.html */
 .btn-primary {
-	border:1px solid black;
+  border: 1px solid black;
   background: url(../images/electronics.jpg) no-repeat 81%;
 }
 .btn-primary:hover {
-	/* border:4px solid black; */
-	background: url(../images/electronics.jpg) no-repeat 83%;
+  /* border:4px solid black; */
+  background: url(../images/electronics.jpg) no-repeat 83%;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -2763,46 +2763,50 @@ fieldset[disabled] .btn-link:hover {
 .btn-lg {
   line-height: 1.33333;
   border-radius: 0;
-	font-weight:bold;
+  font-weight: bold;
 }
 .btn-more_info {
-  border:2px solid rgba(0, 0, 0, .77);
+  border: 2px solid rgba(0, 0, 0, 0.77);
   border-radius: 15px 15px 15px 15px;
   z-index: 5;
   position: absolute;
-	font-size: 22px !important;
-	margin-top: -231px;
-	margin-left: -93px;
-	font-weight: 600 !important;
-  color:white !important;
+  font-size: 22px !important;
+  margin-top: -231px;
+  margin-left: -93px;
+  font-weight: 600 !important;
+  color: white !important;
   padding-top: 3px !important;
   width: 219px;
   height: 40px;
-  transition: 0.2111s; 
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
+  transition: 0.2111s;
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 4px 0 black,
+    0 5px 0 black, 0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4),
+    0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 4px rgba(0, 0, 0, 0.4),
+    5px 7px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.63),
+    0 15px 15px rgba(0, 0, 0, 0.31);
 }
 .btn-more_info:hover {
-	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  border:2px solid rgba(255, 255, 255, .77);
+  border: 2px solid rgba(255, 255, 255, 0.77);
 }
 .more_info_hover {
-  border:2px solid rgba(255, 255, 255, .77);
-	-webkit-text-stroke-width: 1px;
+  border: 2px solid rgba(255, 255, 255, 0.77);
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   background: url(../images/electronics.jpg) no-repeat 83%;
 }
 .btn-more {
-  text-align:center;
+  text-align: center;
   /* display: block; */
   /* opacity: 0; */
-  border:2px solid rgba(0, 0, 0, .77);
+  border: 2px solid rgba(0, 0, 0, 0.77);
   /* margin-left: 0em; */
   margin-top: 22px;
   z-index: 5;
-	font-size: 22px !important;
-	font-weight: 600 !important;
-  color:white !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: white !important;
   padding-top: 3px !important;
   width: 122px;
   height: 44px;
@@ -2810,10 +2814,14 @@ fieldset[disabled] .btn-link:hover {
   background-color: black;
   border-radius: 15px 15px 15px 15px;
   background-position: 50% 0%;
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 4px 0 black,
+    0 5px 0 black, 0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4),
+    0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 4px rgba(0, 0, 0, 0.4),
+    5px 7px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.63),
+    0 15px 15px rgba(0, 0, 0, 0.31);
 }
 
-.btn-more:hover { 
+.btn-more:hover {
   background-position: 50% 51%;
 }
 
@@ -2822,18 +2830,22 @@ fieldset[disabled] .btn-link:hover {
   margin-bottom: 30px;
   /* margin-left:33px; */
   opacity: 1;
-  border:2px solid rgba(0, 0, 0, .77);
+  border: 2px solid rgba(0, 0, 0, 0.77);
   z-index: 5;
-	font-size: 22px !important;
-	font-weight: 600 !important;
-  color:white !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: white !important;
   width: 255px;
   height: 51px;
   transition: 0.1111s;
   background-color: black;
   border-radius: 15px 15px 15px 15px;
   background-position: 50% 0%;
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 4px 0 black,
+    0 5px 0 black, 0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4),
+    0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 4px rgba(0, 0, 0, 0.4),
+    5px 7px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.63),
+    0 15px 15px rgba(0, 0, 0, 0.31);
 }
 
 .more_hover {
@@ -2842,10 +2854,10 @@ fieldset[disabled] .btn-link:hover {
   border: 1px solid white;
 }
 .color_to_my_blue {
-  color:#34b3e9;
+  color: #34b3e9;
 }
 .color_to_my_blue_light {
-  color:#8ddafc;
+  color: #8ddafc;
 }
 .btn-group-sm > .btn,
 .btn-sm {
@@ -4854,17 +4866,19 @@ body.minimal {
   display: table;
   width: 100%;
   height: 100vh;
-  min-height: 100vh
-
+  min-height: 100vh;
 }
 .hero-full-container .hero-full-wrapper .text-content {
   vertical-align: middle;
   display: table-cell;
   width: 100%;
-	font-size:0.333em;
+  font-size: 0.333em;
   /* padding-top:1em; */
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
-
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 4px 0 black,
+    0 5px 0 black, 0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4),
+    0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 4px rgba(0, 0, 0, 0.4),
+    5px 7px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.63),
+    0 15px 15px rgba(0, 0, 0, 0.31);
 }
 .white-text-container h1,
 .white-text-container h2,
@@ -4920,7 +4934,6 @@ body.minimal {
 }
 .btn-primary:focus,
 .btn-primary:hover {
-
   border-color: white;
 }
 .btn-info:focus,
@@ -5345,23 +5358,23 @@ textarea {
   margin: 0.225em;
   padding: 0.5em 0.75em;
   text-align: center;
-	margin-top:88px;
+  margin-top: 88px;
   /* Color fallback */
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #34b3e9;
-	cursor: pointer;
-  transition: 1s; 
+  cursor: pointer;
+  transition: 0.1s;
   background-position: center;
 }
 .clip-text:hover {
-  text-shadow:1px 1px 10px #fff, 1px 1px 10px  rgba(255,255,255, 0.01);
+  text-shadow: 1px 1px 10px #fff, 1px 1px 10px rgba(255, 255, 255, 0.01);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;  
+  -webkit-text-stroke-color: white;
 }
 
 clip-text2 {
@@ -5374,14 +5387,14 @@ clip-text2 {
   margin: 0.225em;
   padding: 0.5em 0.75em;
   text-align: center;
-	margin-top:88px;
+  margin-top: 88px;
   /* Color fallback */
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #34b3e9; */
-  transition: 0.1111s; 
+  transition: 0.1111s;
   background-position: center;
 }
 
@@ -5389,7 +5402,7 @@ clip-text2 {
   font-family: "Oswald", sans-serif;
   font-size: 4.4em;
   font-weight: bold;
-  line-height: 1; 
+  line-height: 1;
   position: relative;
   text-align: center;
   /* Color fallback */
@@ -5398,7 +5411,7 @@ clip-text2 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  transition: 0.1111s; 
+  transition: 0.1111s;
   background-position: 390px 300px;
 }
 
@@ -5406,7 +5419,7 @@ clip-text2 {
   font-family: "Oswald", sans-serif;
   font-size: 4.4em;
   font-weight: bold;
-  line-height: 1; 
+  line-height: 1;
   position: relative;
   text-align: center;
   /* Color fallback */
@@ -5415,7 +5428,7 @@ clip-text2 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  transition: 0.1111s; 
+  transition: 0.1111s;
   background-position: 390px 300px;
 }
 
@@ -5470,131 +5483,132 @@ clip-text2 {
 }
 
 .subtext {
-	font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
-	font-size: 2.4em;
+  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.4em;
   font-weight: bold;
   line-height: 1;
-	color:white;
-	/* color:#34B3E9; */
+  color: white;
+  /* color:#34B3E9; */
   position: relative;
   display: inline-block;
   text-align: center;
-	margin-top: -10px;
-	/* -webkit-text-stroke-width: 1px;
+  margin-top: -10px;
+  /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black; */
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black,  4px 0 black, 0 5px 0 black, 0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.4), 0 3px 4px rgba(0,0,0,.4), 5px 7px rgba(0,0,0,.35), 0 10px 10px rgba(0,0,0,.63), 0 15px 15px rgba(0,0,0,.31);
-
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 4px 0 black,
+    0 5px 0 black, 0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4),
+    0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 4px rgba(0, 0, 0, 0.4),
+    5px 7px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.63),
+    0 15px 15px rgba(0, 0, 0, 0.31);
 }
 
 /* paper.jpg generated with help https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/ THX Sara Soueidan! */
 .paperpattern {
-	background-image: url(../images/paper.jpg);
+  background-image: url(../images/paper.jpg);
   background-repeat: repeat-y;
   background-size: 100% auto;
-	z-index: 4;
+  z-index: 4;
 }
 
 .logo {
-	margin-top:-21px;
-	display:block;
+  margin-top: -21px;
+  display: block;
   width: 246px;
   height: 55px;
   background: url(../images/logo246x55.png) no-repeat center center;
-	border-left-width: 19px;
+  border-left-width: 19px;
   border-left-style: solid;
   border-left-color: black;
 }
 
 .logo:hover {
-	background: url(../images/logo246x55_hover.png) no-repeat center center;
-	/* border: 2px solid black; */
-	-webkit-transition:  0.2s;
-	-o-transition:  0.2s;
-	transition:  0.2s;
+  background: url(../images/logo246x55_hover.png) no-repeat center center;
+  /* border: 2px solid black; */
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .grayscale {
-	filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-.cardanologo{
-	position: absolute;
-	z-index: 4;
-	margin-top: -420px;
-	width: 100%;
-	height: 417px;
-	background: url(../images/cardanologo2.png) no-repeat center;
+.cardanologo {
+  position: absolute;
+  z-index: 4;
+  margin-top: -420px;
+  width: 100%;
+  height: 417px;
+  background: url(../images/cardanologo2.png) no-repeat center;
   opacity: 0.5;
-  transition: 1s;
+  transition: 0.5s;
 }
 
-.twitterlogo{
+.twitterlogo {
   position: relative;
-	display: block;
-	z-index: 5;
-	width: 44px;
-	height: 36px;
+  display: block;
+  z-index: 5;
+  width: 44px;
+  height: 36px;
   background: url(../images/twitter44x36.png) no-repeat center;
   margin-left: 43%;
   margin-top: 4px;
 }
 .twitterlogo:hover {
-	-webkit-filter: brightness(110%) contrast(0.9);
+  -webkit-filter: brightness(110%) contrast(0.9);
   filter: brightness(110%) contrast(0.9);
 }
 
-.githublogo{
+.githublogo {
   position: relative;
-	display: block;
-	z-index: 5;
-	width: 44px;
-	height: 44px;
+  display: block;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
   background: url(../images/github.png) no-repeat center;
   margin-left: 43%;
-
 }
 .githublogo:hover {
-	-webkit-filter: brightness(110%) contrast(0.7);
+  -webkit-filter: brightness(110%) contrast(0.7);
   filter: brightness(110%) contrast(0.7);
 }
 
-.telegramlogo{
+.telegramlogo {
   display: block;
   position: relative;
-	z-index: 5;
-	width: 44px;
-	height: 44px;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
   background: url(../images/telegram.png) no-repeat center;
   margin-left: 43%;
-
 }
 .telegramlogo:hover {
-	-webkit-filter: brightness(110%) contrast(0.9);
+  -webkit-filter: brightness(110%) contrast(0.9);
   filter: brightness(110%) contrast(0.9);
 }
 
 .index_message {
-	z-index: 5;
-	position: relative;
+  z-index: 5;
+  position: relative;
 }
 
 .index_marketing {
-	z-index: 5;
-	font-size: 2em;
-	position: absolute;
-	display: block;
-	width: 100%;
-	margin-top:10px;
-	padding-bottom:17px;
-	background-color: black;
+  z-index: 5;
+  font-size: 2em;
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 17px;
+  background-color: black;
 }
 
 .first_hidden {
   opacity: 0;
 }
 
-.typed-cursor{
-  color:#34b3e9 !important;
+.typed-cursor {
+  color: #34b3e9 !important;
   z-index: 5 !important;
 }
 
@@ -5605,72 +5619,72 @@ moreinfo_who {
 
 .moreinfo_who_text {
   font-size: 1.27em;
-  color:white;
+  color: white;
   font-weight: 300;
   line-height: 1.9;
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,
+    0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4);
   display: block;
-  background-color: rgba(0, 0, 0, .55);
-  padding:33px 33px 33px 33px;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 33px 33px 33px 33px;
   border-radius: 25px;
   border-radius: 10px 15px 15px 10px;
   z-index: 5;
-  border:7px solid rgba(0, 0, 0, .77);
+  border: 7px solid rgba(0, 0, 0, 0.77);
 }
 
 .moreinfo_who_text2 {
   font-size: 1.27em;
-  color:white;
+  color: white;
   font-weight: 300;
   line-height: 1.9;
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,
+    0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4);
   display: block;
-  padding:33px 33px 33px 33px;
+  padding: 33px 33px 33px 33px;
   z-index: 5;
   opacity: 1;
-  background-color: rgba(0, 0, 0, .55);
+  background-color: rgba(0, 0, 0, 0.55);
   border-radius: 25px;
   border-radius: 10px 15px 15px 10px;
-  border: 7px solid rgba(0, 0, 0, .77);
+  border: 7px solid rgba(0, 0, 0, 0.77);
   /* height: 600px;  */
   height: 44%;
 }
 
 .moreinfo_who_text3 {
   font-size: 1.27em;
-  color:white;
+  color: white;
   font-weight: 300;
   line-height: 1.9;
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,  0 4px 1px rgba(0,0,0,.4), 0 0 3px rgba(0,0,0,.4);
+  text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,
+    0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4);
   display: block;
   margin-top: 1em;
   z-index: 5;
   opacity: 1;
-  background-color: rgba(0, 0, 0, .75);
-
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .moreinfo_sol {
-	background-image: url(../images/csolback.jpg);
+  background-image: url(../images/csolback.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
 }
 
-
 .footer {
-  background-image: url('../images/footer_big.jpg');
+  background-image: url("../images/footer_big.jpg");
   height: 323px;
   background-position: center;
   background-repeat: no-repeat;
- 
 }
 
 #subfooter {
   margin-top: 1em;
   height: 3em;
   width: 99.1%;
-  background-color: rgba(0, 0, 0, .55);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 #becausetext {
@@ -5681,7 +5695,7 @@ moreinfo_who {
 }
 
 #becausetext_container {
-  background-image: url('../images/csoloriginal.jpg');
+  background-image: url("../images/csoloriginal.jpg");
   height: 333px;
   background-position: center top;
   background-repeat: no-repeat;
@@ -5697,32 +5711,33 @@ Progress bar code from: https://css-tricks.com/html5-progress-element/ THX Panka
 /* Styling an indeterminate progress bar */
 
 progress:not(value) {
-	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+  /* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
 }
 
 /* Styling the determinate progress element */
 
 progress[value] {
   float: left;
-	/* Get rid of the default appearance */
-	appearance: none;
-	
-	/* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
-	border: none;
-	
-	/* Add dimensions */
-	width: 100%; height: 10px;
-	
-	/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
-	  background-color: whiteSmoke;
-	  border-radius: 3px;
-	  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
-	
-	/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
-	color: royalblue;
-	
-	position: relative;
-	margin: 0 0 1.5em; 
+  /* Get rid of the default appearance */
+  appearance: none;
+
+  /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+  border: none;
+
+  /* Add dimensions */
+  width: 100%;
+  height: 10px;
+
+  /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+
+  /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+  color: royalblue;
+
+  position: relative;
+  margin: 0 0 1.5em;
 }
 
 /*
@@ -5732,128 +5747,131 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
 */
 
 progress[value]::-webkit-progress-bar {
-	background-color: whiteSmoke;
-	border-radius: 3px;
-	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
 }
 
 progress[value]::-webkit-progress-value {
-	position: relative;
-	
-	background-size: 35px 20px, 100% 100%, 100% 100%;
-	border-radius:3px;
-	
-	/* Let's animate this */
-	animation: animate-stripes 5s linear infinite;
+  position: relative;
+
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+
+  /* Let's animate this */
+  animation: animate-stripes 5s linear infinite;
 }
 
-@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+@keyframes animate-stripes {
+  100% {
+    background-position: -100px 0;
+  }
+}
 
 /* Let's spice up things little bit by using pseudo elements. */
 
 progress[value]::-webkit-progress-value:after {
-	/* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
-	content: '';
-	position: absolute;
-	
-	width:5px; height:5px;
-	top:7px; right:7px;
-	
-	background-color: white;
-	border-radius: 100%;
+  /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+  content: "";
+  position: absolute;
+
+  width: 5px;
+  height: 5px;
+  top: 7px;
+  right: 7px;
+
+  background-color: white;
+  border-radius: 100%;
 }
 
 /* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
 
 progress[value]::-moz-progress-bar {
-	/* Gradient background with Stripes */
-	background-image:
-	-moz-linear-gradient( 135deg,
-													 transparent,
-													 transparent 33%,
-													 rgba(0,0,0,.1) 33%,
-													 rgba(0,0,0,.1) 66%,
-													 transparent 66%),
-    -moz-linear-gradient( top,
-														rgba(255, 255, 255, .25),
-														rgba(0,0,0,.2)),
-     -moz-linear-gradient( left, #09c, #f44);
-	
-	background-size: 35px 20px, 100% 100%, 100% 100%;
-	border-radius:3px;
-	
-	/* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
+  /* Gradient background with Stripes */
+  background-image: -moz-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -moz-linear-gradient(left, #09c, #f44);
+
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+
+  /* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
 }
 
 /* Fallback technique styles */
 .progress-bar {
-	background-color: whiteSmoke;
-	border-radius: 3px;
-	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
 
-	/* Dimensions should be similar to the parent progress element. */
-	width: 100%; height:10px;
+  /* Dimensions should be similar to the parent progress element. */
+  width: 100%;
+  height: 10px;
 }
 
 .progress-bar span {
-	background-color: royalblue;
-	border-radius: 3px;
-	
-	display: block;
-	text-indent: -9999px;
+  background-color: royalblue;
+  border-radius: 3px;
+
+  display: block;
+  text-indent: -9999px;
 }
 #stats_saturation_container {
-
-
-width:55px;padding-top:6px;float:left;
+  width: 55px;
+  padding-top: 6px;
+  float: left;
 }
 
-#stats_saturation_container p[data-value] { 
+#stats_saturation_container p[data-value] {
   display: block;
   /* float: left; */
-  position: absolute; 
-  
+  position: absolute;
 }
 
 /* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
 
 #stats_saturation_container p[data-value]:after {
-	content: attr(data-value) '%';
-	position: absolute; right:0;
+  content: attr(data-value) "%";
+  position: absolute;
+  right: 0;
 }
 
-
-.stats_saturation::-webkit-progress-value 
-{
-	/* Gradient background with Stripes */
-	background-image:
-	-webkit-linear-gradient( 135deg,
-													 transparent,
-													 transparent 33%,
-													 rgba(0,0,0,.1) 33%,
-													 rgba(0,0,0,.1) 66%,
-													 transparent 66%),
-    -webkit-linear-gradient( top,
-														rgba(255, 255, 255, .25),
-														rgba(0,0,0,.2)),
-     -webkit-linear-gradient( left, #09c, #690);
+.stats_saturation::-webkit-progress-value {
+  /* Gradient background with Stripes */
+  background-image: -webkit-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #09c, #690);
 }
 
 .menu_more_stats {
-  color:white !important;
+  color: white !important;
   cursor: pointer;
-  float:left;
-  color:white !important;
-  margin-top:-2px;
-  margin-left:6px;
-  margin-right:6px;
+  float: left;
+  color: white !important;
+  margin-top: -2px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .text_to_bottom {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  color:white;
+  color: white;
 }
 
 #page-border-bottom,
