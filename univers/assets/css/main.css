@@ -5906,3 +5906,41 @@ progress[value]::-moz-progress-bar {
 #page-border-bottom {
   bottom: 10px;
 }
+
+.about_icon_wrapper {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.about_icon_xs {
+  margin: auto;
+  background-size: 66px;
+  width: 66px;
+  height: 66px;
+  display: block;
+}
+
+.about_icon_sm {
+  margin: auto;
+  background-size: 111px;
+  width: 111px;
+  height: 111px;
+  display: block;
+}
+
+.about_icon_md {
+  margin: auto;
+  background-size: 166px;
+  width: 166px;
+  height: 166px;
+  display: block;
+}
+
+.about_icon_lg {
+  margin: auto;
+  background-size: 222px;
+  width: 222px;
+  height: 222px;
+  display: block;
+}
