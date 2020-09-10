@@ -445,9 +445,9 @@
               <div class="wrapper">
 
                 <div class="visible-xs clip-top_margin-xs">&nbsp;</div>
-                <div class="visible-sm clip-top_margin-sm">&nbsp;</div>
-                <div class="visible-md clip-top_margin-md">&nbsp;</div>
-                <div class="visible-lg clip-top_margin-lg">&nbsp;</div>
+                <div class="visible-sm clip-top_margin-xs">&nbsp;</div>
+                <div class="visible-md clip-top_margin-xs">&nbsp;</div>
+                <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
                 <div id="title2el" class="clip-text4 clip-text_one">Why Cardano?</div>
 
@@ -465,11 +465,11 @@
                 </div>
       
                 <div class="visible-md about_icon_wrapper invert_colors_filter">
-                  <div class="about_icon_md" style="background-image: url(./assets/images/cardanologo.png);"></div>
+                  <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologo.png);"></div>
                 </div>
                 
                 <div class="visible-lg about_icon_wrapper invert_colors_filter">
-                    <div class="about_icon_md" style="background-image: url(./assets/images/cardanologo.png);"></div>
+                    <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologo.png);"></div>
                 </div>
 
               </div>
@@ -518,16 +518,16 @@
           <div class="wrapper">
 
             <div class="visible-xs clip-top_margin-xs">&nbsp;</div>
-            <div class="visible-sm clip-top_margin-sm">&nbsp;</div>
-            <div class="visible-md clip-top_margin-md">&nbsp;</div>
-            <div class="visible-lg clip-top_margin-lg">&nbsp;</div>
+            <div class="visible-sm clip-top_margin-xs">&nbsp;</div>
+            <div class="visible-md clip-top_margin-xs">&nbsp;</div>
+            <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
                   
             <div class="clip-text4 clip-text_one">Why stake with us?</div>
 
             <div class="visible-xs clip-top_margin-x">&nbsp;</div>
             <div class="visible-sm clip-top_margin-xx">&nbsp;</div>
-            <div class="visible-md clip-top_margin-xxx">&nbsp;</div>
-            <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
+            <div class="visible-md clip-top_margin-xx">&nbsp;</div>
+            <div class="visible-lg clip-top_margin-xxx">&nbsp;</div>
 
             <div class="visible-xs about_icon_wrapper">
               <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
@@ -538,11 +538,11 @@
             </div>
 
             <div class="visible-md about_icon_wrapper">
-              <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
+              <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
             </div>
             
             <div class="visible-lg about_icon_wrapper">
-                <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
+                <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
             </div>
 
           </div>
@@ -678,6 +678,41 @@
       dotsPosition: "right",
       animateTime: 0.555,
       animateFunction: "ease",
+    });
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+      var menu_more_statsEls = document.querySelectorAll('.menu_more_stats');
+
+      menu_more_statsEls.forEach(
+        function(elem) {
+          elem.addEventListener('click', function(evt) {
+            //ga('send', 'event', 'button', 'visit', 'click_visit_zone1');
+            window.location.assign("http://www.w3schools.com");
+          }, true); // <-- the `true` allows this event to happen in the capture phase.
+
+          elem.addEventListener('mouseover', function() {
+            menu_more_statsEls.forEach(
+              function(el) {
+                if (el.firstChild) {
+                  el.firstChild.classList.add("color_to_my_blue");
+                }
+                // 
+                console.log(el.firstChild);
+            });
+          });
+
+          elem.addEventListener('mouseout', function() {
+            menu_more_statsEls.forEach(
+              function(el) {
+                // el.firstChild.classList.remove("color_to_my_blue");
+            });
+          });
+         
+
+        }
+      );
+
     });
   </script>
 

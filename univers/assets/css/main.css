@@ -5940,6 +5940,7 @@ progress[value]::-moz-progress-bar {
   width: 66px;
   height: 66px;
   display: block;
+  background-repeat: no-repeat;
 }
 
 .about_icon_sm {
@@ -5948,6 +5949,7 @@ progress[value]::-moz-progress-bar {
   width: 111px;
   height: 111px;
   display: block;
+  background-repeat: no-repeat;
 }
 
 .about_icon_md {
@@ -5956,6 +5958,7 @@ progress[value]::-moz-progress-bar {
   width: 166px;
   height: 166px;
   display: block;
+  background-repeat: no-repeat;
 }
 
 .about_icon_lg {
@@ -5964,6 +5967,7 @@ progress[value]::-moz-progress-bar {
   width: 222px;
   height: 222px;
   display: block;
+  background-repeat: no-repeat;
 }
 
 .invert_colors_filter {
