@@ -5977,11 +5977,21 @@ progress[value]::-moz-progress-bar {
 
 .clip-text-background {
   width: auto;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
   background: #fff; /* fallback for browsers that don't understand rgba */
-  border: solid 10px #000; /* fallback for browsers that don't understand rgba */
-  background-color: rgba(0, 0, 0, 0.8); /* slighly transparent black */
-  border-color: rgba(0, 0, 0, 0.2); /*Very transparent black*/
+  border: solid 3px #000; /* fallback for browsers that don't understand rgba */
+  background-color: rgba(0, 0, 0, 0.7); /* slighly transparent black */
+  border-color: rgba(0, 0, 0, 0.69); /*Very transparent black*/
+}
+
+.gold1 {
+  color: #fdec06;
+}
+.gold2 {
+  color: #f8d31a;
+}
+.gold3 {
+  color: #fff203;
 }

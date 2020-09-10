@@ -96,20 +96,22 @@
                 </li>
               </div>
 
+              
+
               <li><a href="./more-info.html" title="">About</a></li>
               <li><a href="./contact.html" title="">Contact</a></li>
               <li><a href="./projects.html" title="">Projects</a></li>
 
               
 
-              <div class="visible-xs clip-top_margin-x" style="text-align: center;">
+              <!-- <div class="visible-xs clip-top_margin-x" style="text-align: center;">
                 <li>
                   <b style="color:white;">[AWH] ADApools.org stats:</b>
                 </li>
-              </div>
+              </div> -->
               
               <li class="menu_more_stats">
-                <i class="fa fa-building menu_more_stats_text"></i><b class="menu_more_stats_text">Pledge:</b> <b class="color_to_my_blue_light">5000 ₳</b>
+                <i class="fa fa-building menu_more_stats_text"></i><b class="menu_more_stats_text">Pledge:</b> <b class="color_to_my_blue_light menu_more_stats_value">5000 ₳</b>
               </li>
               
               <div class="visible-xs clip-top_margin-x">
@@ -119,7 +121,7 @@
               </div>
 
               <li class="menu_more_stats">
-                <i class="fa fa-minus menu_more_stats_text"></i><b class="menu_more_stats_text">Margin:</b> <b class="color_to_my_blue_light">3%</b>
+                <i class="fa fa-minus menu_more_stats_text"></i><b class="menu_more_stats_text">Margin:</b> <b class="color_to_my_blue_light menu_more_stats_value">3%</b>
               </li>
 
               <div class="visible-xs clip-top_margin-x">
@@ -129,7 +131,7 @@
               </div>
 
               <li class="menu_more_stats">
-                <i class="fa fa-minus menu_more_stats_text"></i><b class="menu_more_stats_text">Fixed Cost:</b> <b class="color_to_my_blue_light">333 ₳</b>
+                <i class="fa fa-minus menu_more_stats_text"></i><b class="menu_more_stats_text">Fixed Cost:</b> <b class="color_to_my_blue_light menu_more_stats_value">333 ₳</b>
               </li>
 
               <div class="visible-xs clip-top_margin-x">
@@ -139,7 +141,30 @@
               </div>
 
               <li class="menu_more_stats">
-                <i class="fa fa-tachometer menu_more_stats_text"></i><b class="menu_more_stats_text">ROA (30d):</b> <b class="color_to_my_blue_light">5.67%</b>
+
+                <b class="menu_more_stats_text">Saturation:</b> <b class="color_to_my_blue_light menu_more_stats_value">35%</b>
+  
+              </li>
+
+              
+
+
+              <li class="menu_more_stats">
+
+                <div id="stats_saturation_container">
+                  <!-- <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"></b> -->
+              
+
+                  <progress max="100" value="35" class="stats_saturation pull-left">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                    <div class="progress-bar">
+                      <span style="width: 35%">35%</span>
+                    </div>
+                  </progress>	
+
+
+                </div>
+
               </li>
 
               <!-- <li>
@@ -156,28 +181,9 @@
               </div>
 
               <li class="menu_more_stats">
-
-                  <b class="menu_more_stats_text">Saturation:</b> <b class="color_to_my_blue_light">35%</b>
-    
+                <i class="fa fa-tachometer menu_more_stats_text gold1"></i><b class="menu_more_stats_text gold2">ROA (30d):</b> <b class="gold3">5.67%</b>
               </li>
 
-              <li class="menu_more_stats">
-
-                <div id="stats_saturation_container">
-                  <!-- <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"></b> -->
-             
-
-                  <progress max="100" value="35" class="stats_saturation pull-left">
-                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
-                    <div class="progress-bar">
-                      <span style="width: 35%">35%</span>
-                    </div>
-                  </progress>	
-
-
-                </div>
-
-              </li>
             
             </ul>
           </div>
@@ -210,20 +216,20 @@
                 <div class="visible-md clip-top_margin-xxx">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
-                <div class="visible-xs about_icon_wrapper invert_colors_filter">
-                  <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_01.svg);"></div>
+                <div class="visible-xs about_icon_wrapper">
+                  <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_01.png);"></div>
                 </div>
 
-                <div class="visible-sm about_icon_wrapper invert_colors_filter">
-                  <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_01.svg);"></div>
+                <div class="visible-sm about_icon_wrapper">
+                  <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_01.png);"></div>
                 </div>
 
-                <div class="visible-md about_icon_wrapper invert_colors_filter">
-                  <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_01.svg);"></div>
+                <div class="visible-md about_icon_wrapper">
+                  <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_01.png);"></div>
                 </div>
                 
-                <div class="visible-lg about_icon_wrapper invert_colors_filter">
-                    <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_01.svg);"></div>
+                <div class="visible-lg about_icon_wrapper">
+                    <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_01.png);"></div>
                 </div>
 
               </div>
@@ -400,19 +406,19 @@
                   <div class="visible-lg clip-top_margin-lg">&nbsp;</div>
 
                   <div class="visible-xs about_icon_wrapper">
-                    <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_046.png);"></div>
+                    <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_04.png);"></div>
                   </div>
         
                   <div class="visible-sm about_icon_wrapper">
-                    <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_046.png);"></div>
+                    <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_04.png);"></div>
                   </div>
         
                   <div class="visible-md about_icon_wrapper">
-                    <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_046.png);"></div>
+                    <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_04.png);"></div>
                   </div>
                   
                   <div class="visible-lg about_icon_wrapper">
-                      <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_046.png);"></div>
+                      <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_04.png);"></div>
                   </div>
 
                   <div class="moreinfo_who_text" style="background-image: url('./assets/images/footer_big.jpg');height: 323px;background-position: center;background-repeat: no-repeat;" >
@@ -456,20 +462,20 @@
                 <div class="visible-md clip-top_margin-xxx">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
-                <div class="visible-xs about_icon_wrapper invert_colors_filter">
-                  <div class="about_icon_xs" style="background-image: url(./assets/images/cardanologo.png);"></div>
+                <div class="visible-xs about_icon_wrapper">
+                  <div class="about_icon_xs" style="background-image: url(./assets/images/cardanologogold.png);"></div>
                 </div>
       
-                <div class="visible-sm about_icon_wrapper invert_colors_filter">
-                  <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologo.png);"></div>
+                <div class="visible-sm about_icon_wrapper">
+                  <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologogold.png);"></div>
                 </div>
       
-                <div class="visible-md about_icon_wrapper invert_colors_filter">
-                  <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologo.png);"></div>
+                <div class="visible-md about_icon_wrapper">
+                  <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologogold.png);"></div>
                 </div>
                 
-                <div class="visible-lg about_icon_wrapper invert_colors_filter">
-                    <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologo.png);"></div>
+                <div class="visible-lg about_icon_wrapper">
+                    <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologogold.png);"></div>
                 </div>
 
               </div>
@@ -573,7 +579,7 @@
                 <i class="fa fa-building" style="color:white;"></i>Pledge: <b class="color_to_my_blue_light">5000 ₳</b>
               </div>
               <div  style="padding-top:-4px;">
-                <i class="fa fa-tachometer" style="color:white;"></i>ROA (30d): <b class="color_to_my_blue_light">5.67%</b>
+                <i class="fa fa-tachometer menu_more_stats_text gold1"></i><b class="menu_more_stats_text gold2">ROA (30d):</b> <b class="gold3">5.67%</b>
               </div>
 
               </div>
@@ -676,7 +682,7 @@
       mainElement: "bodyel",
       displayDots: true,
       dotsPosition: "right",
-      animateTime: 0.555,
+      animateTime: 0.4444,
       animateFunction: "ease",
     });
 
@@ -686,6 +692,10 @@
 
       var menu_more_stats_highlightEls = document.querySelectorAll('.menu_more_stats_text'); 
 
+      var menu_more_stats_valueEls = document.querySelectorAll('.menu_more_stats_value'); 
+
+      
+
       menu_more_statsEls.forEach(
         function(elem) {
           elem.addEventListener('click', function(evt) {
@@ -693,29 +703,7 @@
             window.location.assign("http://www.w3schools.com");
           }, true); // <-- the `true` allows this event to happen in the capture phase.
 
-          elem.addEventListener('mouseover', function() {
-            menu_more_stats_highlightEls.forEach(
-              function(el) {
-                if (el) {
-                  el.classList.add("color_to_my_blue");
-                }
-                // 
-            });
-          });
-
-          elem.addEventListener('mouseout', function() {
-            menu_more_stats_highlightEls.forEach(
-              function(el) {
-                if (el) {
-                  el.classList.remove("color_to_my_blue");
-                }
-                // 
-            });
-          });
-         
-
-        }
-      );
+        });
 
     });
   </script>
