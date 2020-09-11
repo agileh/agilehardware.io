@@ -5700,6 +5700,12 @@ moreinfo_who {
   background-repeat: no-repeat;
 }
 
+.footer_background {
+  background-image: url("../images/footer_big.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #subfooter {
   margin-top: 1em;
   height: 3em;
