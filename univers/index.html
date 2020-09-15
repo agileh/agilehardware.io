@@ -70,7 +70,9 @@
 
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav" style="height:20px;">
-              <li><a class="logo grayscale" href="./index.html" title=""></a></li>
+              <li><a class="logo " href="./index.html" title="">
+                <img src="./assets/images/ahw.png" alt="">
+              </a></li>
               <li><a href="./more-info.html" title="">About</a></li>
               <li><a href="./contact.html" title="">Contact</a></li>
               <li><a href="./projects.html" title="">Projects</a></li>
@@ -137,13 +139,13 @@
 
               <div class="wrapper" style="padding-top: 15px;">
 
-                <div id="logoel" class="clip-text clip-text_one first_hidden">Agile Hardware</div>
+                <div id="logoel" class="clip-text clip-text_index">Agile Hardware</div>
 
             	</div>
 
 							<div class="wrapper">
 
-                <div id="subtextel" class="subtext first_hidden clip-text-background">Cardano Stake Pool</div>
+                <div id="subtextel" class="subtext clip-text-background">Cardano Stake Pool</div>
 
             	</div>
 
@@ -155,7 +157,7 @@
               <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
 
-                <div  id="typing-text-content"  class="text-content clip-text-background first_hidden ">
+                <div class="text-content clip-text-background">
 
                   <span id="typed-strings">
                     <span><b class="color_to_my_blue">We are</b> software developers & open source evangelists!</span>
@@ -177,7 +179,7 @@
             
             <div class="wrapper">
                 
-              <a id="moreel" href="./more-info.html" class="btn btn-primary btn-lg btn-more_info first_hidden">&nbsp;&nbsp;MORE INFO&nbsp; ➠</a>
+              <a id="moreel" href="./more-info.html" class="btn btn-primary btn-lg btn-more_info">&nbsp;&nbsp;MORE INFO&nbsp; ➠</a>
 
             </div>
 
@@ -235,7 +237,6 @@
             }
           );
 
-          // type();
           movingBackgroundImage();
 
           var bodyEl = document.getElementById('bodyel');
@@ -279,28 +280,30 @@
           // request.send(); ====================================================== TODO: PARSE JSON & update corresponding DOM elements..
 
           // document.dispatchEvent(new Event("mouseenter"));
-          
-
+          +
+        
 
           fadeIn(bodyEl,1,function() {
 
-            fadeIn(logoEl,2,function() {
+            type();
+
+            // fadeIn(logoEl,1,function() {
               
-              fadeIn(subtextEl,3,function() {
+            //   fadeIn(subtextEl,1,function() {
 
-                fadeIn(textcontentEl,5,function() {
+            //     fadeIn(textcontentEl,1,function() {
 
-                  fadeIn(moreEl,5,function() {
+            //       fadeIn(moreEl,1,function() {
 
-                    type();
+                    
 
-                  });
+            //       });
 
-                });
+            //     });
 
-              });
+            //   });
 
-            });
+            // });
 
           });
 

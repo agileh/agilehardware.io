@@ -2800,7 +2800,7 @@ fieldset[disabled] .btn-link:hover {
   text-align: center;
   /* display: block; */
   /* opacity: 0; */
-  border: 2px solid rgba(0, 0, 0, 0.77);
+  /* border: 2px solid rgba(0, 0, 0, 0.77); */
   /* margin-left: 0em; */
   margin-top: 22px;
   z-index: 5;
@@ -5369,7 +5369,7 @@ textarea {
 
 /* Clip text element */
 .clip-text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Expletus Sans", sans-serif;
   font-size: 5.5em;
   font-weight: bold;
   line-height: 1;
@@ -5383,23 +5383,23 @@ textarea {
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #34b3e9;
+  -webkit-text-stroke-width: 0.007px;
+  -webkit-text-stroke-color: white;
   cursor: pointer;
-  transition: 0.1s;
   background-position: center;
 }
 .clip-text:hover {
+  /* 
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px rgba(255, 255, 255, 0.01);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: white;  */
 }
 
 clip-text2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 5.5em;
+  font-family: "Expletus Sans", sans-serif;
+  font-size: 4em;
   font-weight: bold;
   line-height: 1;
   position: relative;
@@ -5412,15 +5412,13 @@ clip-text2 {
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #34b3e9; */
   transition: 0.1111s;
   background-position: center;
 }
 
 .clip-text3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 4.4em;
+  font-family: "Expletus Sans", sans-serif;
+  font-size: 4em;
   font-weight: bold;
   line-height: 1;
   position: relative;
@@ -5429,15 +5427,13 @@ clip-text2 {
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
   transition: 0.1111s;
   background-position: 390px 300px;
 }
 
 .clip-text4 {
-  font-family: "Oswald", sans-serif;
-  font-size: 4.4em;
+  font-family: "Expletus Sans", sans-serif;
+  font-size: 4em;
   font-weight: bold;
   line-height: 1;
   position: relative;
@@ -5446,8 +5442,6 @@ clip-text2 {
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
   transition: 0.1111s;
   background-position: 390px 300px;
 }
@@ -5498,8 +5492,11 @@ clip-text2 {
 }
 
 /* Background image from https://www.123rf.com/photo_61582630_closeup-electronic-circuit-board-background.html */
+.clip-text_index {
+  background-image: url(../images/electronics_smaller_rotated_cropped_untouched_colors.jpg);
+}
 .clip-text_one {
-  background-image: url(../images/electronics.jpg);
+  background-color: white;
 }
 
 .subtext {
@@ -5531,24 +5528,27 @@ clip-text2 {
 }
 
 .logo {
-  /* margin-top: -25px; */
+  margin-top: -5px; /*
+  padding: 5px 5px 5px 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;*/
   display: block;
-  width: 246px;
-  height: 55px;
-  background: url(../images/logo246x55.png) no-repeat center center;
-  border-left-width: 19px;
-  border-left-style: solid;
-  border-left-color: black;
+  width: 200px;
+  height: 36px;
+  margin-right: 22px;
+  /*background: url(../images/ahw-cut.png) no-repeat;*/
+  border-right: none !important;
 }
-
+/*
 .logo:hover {
   background: url(../images/logo246x55_hover.png) no-repeat center center;
-  /* border: 2px solid black; */
+   border: 2px solid black; 
   -webkit-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
 }
-
+*/
 .grayscale {
   filter: grayscale(100%);
 }
