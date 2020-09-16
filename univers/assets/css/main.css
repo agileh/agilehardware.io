@@ -4751,23 +4751,58 @@ button.close {
     display: inline-block !important;
   }
 }
+.responsive_text {
+  letter-spacing: 0.01em;
+}
+@media (max-width: 500px) {
+  .responsive_text {
+    font-size:0.7em !important;
+  }
+}
+@media (max-width: 600px) {
+  .responsive_text {
+    font-size:0.8em !important;
+  }
+}
+@media (max-width: 700px) {
+  .responsive_text {
+    font-size:0.9em !important;
+  }
+}
 @media (max-width: 767px) {
+  .responsive_text {
+    font-size:1.3em !important;
+  }
   .hidden-xs {
     display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .responsive_text {
+    font-size:1.38em !important;
+  }
   .hidden-sm {
     display: none !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .responsive_text {
+    font-size:1.4em !important;
+  }
   .hidden-md {
     display: none !important;
   }
 }
 @media (min-width: 1200px) {
+  .responsive_text {
+    font-size:1.5em !important;
+  }
   .hidden-lg {
+    display: none !important;
+  }
+}
+@media (max-height: 710px) {
+  .hidden-on-small-phones {
     display: none !important;
   }
 }
@@ -5386,7 +5421,7 @@ textarea {
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0.007px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   cursor: pointer;
   background-position: center;
@@ -5496,7 +5531,7 @@ clip-text2 {
 
 /* Background image from https://www.123rf.com/photo_61582630_closeup-electronic-circuit-board-background.html */
 .clip-text_index {
-  background-image: url(../images/electronics.jpg);
+  background-image: url(../images/electronics_smaller_rotated_untouched.jpg);
 }
 .clip-text_one {
   background-color: white;
@@ -5624,9 +5659,9 @@ moreinfo_who {
 }
 
 .moreinfo_who_text {
-  font-size: 1.27em;
+  font-size: 1.36em;
   color: white;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.9;
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,
     0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4);
@@ -5640,9 +5675,9 @@ moreinfo_who {
 }
 
 .moreinfo_who_text2 {
-  font-size: 1.27em;
+  font-size: 1.36em;
   color: white;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.9;
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,
     0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4);
@@ -5654,14 +5689,13 @@ moreinfo_who {
   border-radius: 25px;
   border-radius: 10px 15px 15px 10px;
   border: 7px solid rgba(0, 0, 0, 0.77);
-  /* height: 600px;  */
   height: 44%;
 }
 
 .moreinfo_who_text3 {
-  font-size: 1.27em;
+  font-size: 1.36em;
   color: white;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.9;
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 2px 0 black,
     0 4px 1px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.4);
@@ -5703,7 +5737,8 @@ moreinfo_who {
 #becausetext {
   color: white;
   float: left;
-  font-size: 1.33em;
+  font-size: 1.36em;
+  font-weight: bold;
   width: 100%;
 }
 
