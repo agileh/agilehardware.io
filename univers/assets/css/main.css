@@ -15,6 +15,9 @@ html {
   font-family: "Expletus Sans", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 body {
   margin: 0;
@@ -5493,7 +5496,7 @@ clip-text2 {
 
 /* Background image from https://www.123rf.com/photo_61582630_closeup-electronic-circuit-board-background.html */
 .clip-text_index {
-  background-image: url(../images/electronics_smaller_rotated_cropped_untouched_colors.jpg);
+  background-image: url(../images/electronics.jpg);
 }
 .clip-text_one {
   background-color: white;
@@ -5528,27 +5531,10 @@ clip-text2 {
 }
 
 .logo {
-  margin-top: -5px; /*
-  padding: 5px 5px 5px 5px;
-  margin-left: 8px;
-  margin-right: 8px;
-  margin-top: 8px;*/
-  display: block;
-  width: 200px;
-  height: 36px;
-  margin-right: 22px;
-  /*background: url(../images/ahw-cut.png) no-repeat;*/
+  margin-top: -5px; 
   border-right: none !important;
 }
-/*
-.logo:hover {
-  background: url(../images/logo246x55_hover.png) no-repeat center center;
-   border: 2px solid black; 
-  -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
-}
-*/
+
 .grayscale {
   filter: grayscale(100%);
 }
