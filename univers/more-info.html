@@ -44,8 +44,12 @@
     <title>Agile Hardware Cardano Staking Pool</title>
 
     <link href="./assets/css/main.css" rel="stylesheet"/>
+<!-- 
+    <link rel="stylesheet" type="text/css" href="./assets/css/full-page-scroll.min.css"/> -->
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/full-page-scroll.min.css"/>
+    <link href="./assets/css//aos.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
 
   </head>
 
@@ -79,11 +83,11 @@
                 </a>
               </li>
 
-              <div class="visible-xs clip-top_margin-x">
+              <!-- <div class="visible-xs clip-top_margin-x">
                 <li style="color: white;font-size: 1.3em;float:left;margin-left:60px;">
                   Cardano Stake Pool
                 </li>
-              </div>
+              </div> -->
 
               <div class="visible-xs clip-top_margin-x">
                 <li>
@@ -98,9 +102,9 @@
 
               
 
-              <li><a href="./more-info.html" title="">About</a></li>
-              <li><a href="./contactform.html" title="">Contact</a></li>
-              <li><a href="./projects.html" title="">Projects</a></li>
+              <li style="width: 75px;display: block;"><a href="./more-info.html" title="">About</a></li>
+              <li style="width: 85px;display: block;"><a href="./contactform.html" title="">Contact</a></li>
+              <li style="width: 75px;display: block;"><a href="./blog.html" title="">Blog</a></li>
 
               
 
@@ -109,50 +113,56 @@
                   <b style="color:white;">[AWH] ADApools.org stats:</b>
                 </li>
               </div> -->
+
+              <li id="loading_circle">
+                <div class="ring-container">
+                  <div class="ringring"></div>
+                  <div class="circle"></div>
+                </div>
+              </li>
               
               
-              
-              <div class="visible-xs clip-top_margin-x">
+              <div class="visible-xs clip-top_margin-x menu_more_stats first_hidden">
                 <li>
                   &nbsp;
                 </li>
               </div>
 
-              <li class="menu_more_stats">
+              <li class="menu_more_stats first_hidden">
                 <i class="fa fa-minus menu_more_stats_text"></i><b class="menu_more_stats_text">Margin:</b> <b class="color_to_my_blue_light menu_more_stats_value">3%</b>
               </li>
 
-              <div class="visible-xs clip-top_margin-x">
+              <div class="visible-xs clip-top_margin-x menu_more_stats first_hidden">
                 <li>
                   &nbsp;
                 </li>
               </div>
 
-              <li class="menu_more_stats">
+              <li class="menu_more_stats first_hidden">
                 <i class="fa fa-minus menu_more_stats_text"></i><b class="menu_more_stats_text">Fixed Cost:</b> <b class="color_to_my_blue_light menu_more_stats_value">333 ₳</b>
               </li>
 
-              <div class="visible-xs clip-top_margin-x">
+              <div class="visible-xs clip-top_margin-x menu_more_stats first_hidden">
                 <li>
                   &nbsp;
                 </li>
               </div>
 
-              <li class="menu_more_stats">
+              <li class="menu_more_stats first_hidden">
                 <i class="fa fa-building menu_more_stats_text"></i><b class="menu_more_stats_text">Pledge:</b> <b class="color_to_my_blue_light menu_more_stats_value">10000 ₳</b>
               </li>
 
-              <div class="visible-xs clip-top_margin-x">
+              <div class="visible-xs clip-top_margin-x menu_more_stats first_hidden">
                 <li>
                   &nbsp;
                 </li>
               </div>
 
-              <li class="menu_more_stats">
+              <li class="menu_more_stats first_hidden">
                 <i class="fa fa-tachometer "></i><b class="menu_more_stats_text">Saturation:</b> <b class="color_to_my_blue_light menu_more_stats_value">35%</b>
               </li>
 
-              <li class="menu_more_stats">
+              <li class="menu_more_stats first_hidden">
 
                 <div id="stats_saturation_container">
                   <!-- <b style="float:left;color:white;margin-top:-1px;margin-left:11px;margin-right:11px;"></b> -->
@@ -177,13 +187,13 @@
                 <b class"menu_stats"><i class="fa fa-th" style="color:white;"></i> Lifetime Blocks: 333</b>
               </li> -->
 
-              <div class="visible-xs clip-top_margin-x">
+              <div class="visible-xs clip-top_margin-x menu_more_stats first_hidden">
                 <li>
                   &nbsp;
                 </li>
               </div>
 
-              <li class="menu_more_stats">
+              <li class="menu_more_stats first_hidden">
                 <i class="fa fa-tachometer menu_more_stats_text gold1"></i><b class="menu_more_stats_text gold2">ROA (30d):</b> <b class="gold3">5.67%</b>
               </li>
 
@@ -194,13 +204,18 @@
       </nav>
     </header>
 
-  <div id="bodyel" class="scroll-container hero-full-container background-image-container" style="background-image: url('./assets/images/space2_dark.jpg');">
-      
-    <section>
-      <div class="container">
+  <div id="bodyel" class=" scroll-container hero-full-container background-image-container" >
+
+
+
+    <section class="graduallyshowonscroll" style="background-image: url('./assets/images/space2_dark.jpg');">
+      <div class="onscrollbackground"></div>
+      <div class="container" data-aos-easing="">
         <div class="row">
-          <div class="col-xs-12">
-            <div class="hero-full-wrapper">
+          <div class="col-xs-12 ">
+            <div class="hero-full-wrapper" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900">
 
               <div class="wrapper">
 
@@ -209,9 +224,9 @@
                 <div class="visible-md clip-top_margin-md">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-lg">&nbsp;</div>
 
-                <div class="clip-text-background">
+                <!-- <div class="clip-text-background">
                   <div class="clip-text3 clip-text_one">Who are we?</div>
-                </div>
+                </div> -->
 
 
                 <div class="visible-xs clip-top_margin-x">&nbsp;</div>
@@ -219,19 +234,19 @@
                 <div class="visible-md clip-top_margin-xxx">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
-                <div class="visible-xs about_icon_wrapper">
+                <div class="visible-xs about_icon_wrapper " data-aos="zoom-in">
                   <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_01.png);"></div>
                 </div>
 
-                <div class="visible-sm about_icon_wrapper">
+                <div class="visible-sm about_icon_wrapper" data-aos="zoom-in">
                   <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_01.png);"></div>
                 </div>
 
-                <div class="visible-md about_icon_wrapper">
+                <div class="visible-md about_icon_wrapper" data-aos="zoom-in">
                   <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_01.png);"></div>
                 </div>
                 
-                <div class="visible-lg about_icon_wrapper">
+                <div class="visible-lg about_icon_wrapper" data-aos="zoom-in">
                     <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_01.png);"></div>
                 </div>
 
@@ -243,12 +258,18 @@
 
                   <div class="moreinfo_who_text responsive_text">
                     We are software engineers so we know from the first hand how hard is it to create effective, sustainable, multi platform and secure software.
-                    Our journey to the world of decentralized money began with Bitcoin but we love how active the development of Cardano is and we truly believe that engagement with academic world is the key to success.
-                    We are passionate but patient.
-                    We know that great things deserve some time to manifest.
-                    We can't stand aside anymore!
                     <br>
-                  <a id="scrolldown" href="#1" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE <br>▼</a>
+                    We believe that close engagement with academic world is the key to success.
+                    <br>
+                    We are passionate but patient... great things deserve some time to manifest.
+                    <br>
+                    We love how active the development of Cardano
+                    <br>
+                    We can't stand aside anymore!
+
+                    
+                    <br>
+                 
                   </div>
 
                 </div>
@@ -260,10 +281,13 @@
     </section>
 
     <section>
-      <div class="container moreinfo_sol">
+      <div class="container moreinfo_sol graduallyshowonscroll" data-aos-easing="ease-in-sine">
+        <div class="onscrollbackground"></div>
         <div class="row">
           <div class="col-xs-12">
-            <div class="hero-full-wrapper">
+            <div class="hero-full-wrapper" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900">
 
               <div class="wrapper">
 
@@ -272,28 +296,28 @@
                 <div class="visible-md clip-top_margin-md">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-lg">&nbsp;</div>
 
-                <div class="clip-text-background">
+                <!-- <div class="clip-text-background">
                   <div class="clip-text3 clip-text_one">Bitcoin?</div>
-                </div>
+                </div> -->
 
                 <div class="visible-xs clip-top_margin-x">&nbsp;</div>
                 <div class="visible-sm clip-top_margin-xx">&nbsp;</div>
                 <div class="visible-md clip-top_margin-xxx">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
-                <div class="visible-xs about_icon_wrapper">
+                <div class="visible-xs about_icon_wrapper" data-aos="zoom-in">
                   <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_02.svg);"></div>
                 </div>
 
-                <div class="visible-sm about_icon_wrapper">
+                <div class="visible-sm about_icon_wrapper" data-aos="zoom-in">
                   <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_02.svg);"></div>
                 </div>
 
-                <div class="visible-md about_icon_wrapper">
+                <div class="visible-md about_icon_wrapper" data-aos="zoom-in">
                   <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_02.svg);"></div>
                 </div>
                 
-                <div class="visible-lg about_icon_wrapper">
+                <div class="visible-lg about_icon_wrapper" data-aos="zoom-in">
                     <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_02.svg);"></div>
                 </div>
 
@@ -311,7 +335,7 @@
                     After the DAO hack we felt strongly that “code is the law” should matter and that was first time we heard about Charles Hoskinson.
 
                     <br>
-                  <a id="scrolldown" href="#2" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE <br>▼</a>
+                  <a id="scrolldown" href="#2" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE </a>
                   </div>
 
 
@@ -327,43 +351,49 @@
 
     <section>
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="hero-full-wrapper background-image-container" style="background-image: url('./assets/images/space2_dark.jpg');">
-
-              <div class="wrapper">
+        <div class="row ">
+          
+          <div class="col-xs-12 graduallyshowonscroll">
+            <div class="onscrollbackground"></div>
+            <div class="hero-full-wrapper background-image-container " style="background-image: url('./assets/images/space2_dark.jpg');">
+              
+              <div class="wrapper" data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="900" >
 
                 <div class="visible-xs clip-top_margin-xs">&nbsp;</div>
                 <div class="visible-sm clip-top_margin-sm">&nbsp;</div>
                 <div class="visible-md clip-top_margin-md">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-lg">&nbsp;</div>
 
-                <div class="clip-text3 clip-text_one">Agile Hardware?</div>
+                <div class="clip-text3 clip-text_one">Agile Hardware</div>
 
                 <div class="visible-xs clip-top_margin-x">&nbsp;</div>
                 <div class="visible-sm clip-top_margin-xx">&nbsp;</div>
                 <div class="visible-md clip-top_margin-xxx">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
-                <div class="visible-xs about_icon_wrapper">
+                <div class="visible-xs about_icon_wrapper" data-aos="zoom-in">
                   <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_03.png);"></div>
                 </div>
 
-                <div class="visible-sm about_icon_wrapper">
+                <div class="visible-sm about_icon_wrapper" data-aos="zoom-in">
                   <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_03.png);"></div>
                 </div>
 
-                <div class="visible-md about_icon_wrapper">
+                <div class="visible-md about_icon_wrapper" data-aos="zoom-in">
                   <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_03.png);"></div>
                 </div>
                 
-                <div class="visible-lg about_icon_wrapper">
+                <div class="visible-lg about_icon_wrapper" data-aos="zoom-in">
                     <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_03.png);"></div>
                 </div>
 
               </div>
 
-              <div class="wrapper" >
+              <div class="wrapper" data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="900" >
 
                 <div class="moreinfo_who">
 
@@ -376,7 +406,7 @@
                     In the ideal world even hardware, it’s production schemes and inner workings even the design should be open sourced.
                     We believe that we are slowly getting there.
                     <br>
-                  <a id="scrolldown" href="#3" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE <br>▼</a>
+                  <a id="scrolldown" href="#3" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE </a>
                   </div>
 
 
@@ -392,7 +422,9 @@
       <div class="container" >
         <div class="row">
           <div class="col-xs-12">
-            <div class="hero-full-wrapper">
+            <div class="hero-full-wrapper" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900">
 
               <div class="wrapper">
 
@@ -403,19 +435,19 @@
                   <div class="visible-md clip-top_margin-md">&nbsp;</div>
                   <div class="visible-lg clip-top_margin-lg">&nbsp;</div>
 
-                  <div class="visible-xs about_icon_wrapper">
+                  <div class="visible-xs about_icon_wrapper" data-aos="zoom-in">
                     <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_04.png);"></div>
                   </div>
         
-                  <div class="visible-sm about_icon_wrapper">
+                  <div class="visible-sm about_icon_wrapper" data-aos="zoom-in">
                     <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_04.png);"></div>
                   </div>
         
-                  <div class="visible-md about_icon_wrapper">
+                  <div class="visible-md about_icon_wrapper" data-aos="zoom-in">
                     <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_04.png);"></div>
                   </div>
                   
-                  <div class="visible-lg about_icon_wrapper">
+                  <div class="visible-lg about_icon_wrapper" data-aos="zoom-in">
                       <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_04.png);"></div>
                   </div>
 
@@ -429,7 +461,7 @@
                     This is in our humble opinion proof that the creation of souvereign and truly decentralized “crypto” economy is possible.
                     Cardano is confidently aiming there.
                     <br>
-                  <a  href="#4" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE <br>▼</a>
+                  <a  href="#4" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE </a>
                   </div>
 
 
@@ -445,34 +477,36 @@
       <div class="section-container moreinfo_sol">
         <div class="row">
           <div class="col-xs-12">
-            <div class="hero-full-wrapper">
+            <div class="hero-full-wrapper" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900">
               <div class="wrapper">
 
                 <div class="visible-xs clip-top_margin-xs">&nbsp;</div>
                 <div class="visible-sm clip-top_margin-xs">&nbsp;</div>
                 <div class="visible-md clip-top_margin-xs">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
-
-                <div id="title2el" class="clip-text4 clip-text_one">Why Cardano?</div>
+<!-- 
+                <div id="title2el" class="clip-text4 clip-text_one">Why Cardano?</div> -->
 
                 <div class="visible-xs clip-top_margin-x">&nbsp;</div>
                 <div class="visible-sm clip-top_margin-xx">&nbsp;</div>
                 <div class="visible-md clip-top_margin-xxx">&nbsp;</div>
                 <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
 
-                <div class="visible-xs about_icon_wrapper">
+                <div class="visible-xs about_icon_wrapper" data-aos="zoom-in" data-aos="zoom-in">
                   <div class="about_icon_xs" style="background-image: url(./assets/images/cardanologogold.png);"></div>
                 </div>
       
-                <div class="visible-sm about_icon_wrapper">
+                <div class="visible-sm about_icon_wrapper" data-aos="zoom-in" data-aos="zoom-in">
                   <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologogold.png);"></div>
                 </div>
       
-                <div class="visible-md about_icon_wrapper">
+                <div class="visible-md about_icon_wrapper" data-aos="zoom-in" data-aos="zoom-in">
                   <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologogold.png);"></div>
                 </div>
                 
-                <div class="visible-lg about_icon_wrapper">
+                <div class="visible-lg about_icon_wrapper" data-aos="zoom-in" >
                     <div class="about_icon_sm" style="background-image: url(./assets/images/cardanologogold.png);"></div>
                 </div>
 
@@ -503,7 +537,7 @@
 
                   <br>
 
-                <a href="#5" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE <br>▼</a>
+                <a href="#5" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE </a>
 
                 </div>
 
@@ -517,7 +551,9 @@
 
     <section>
       <div class="row">
-        <div class="col-sm-12" style="text-align: center;">
+        <div class="col-sm-12" style="text-align: center;" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="900">
 
           <div class="wrapper">
 
@@ -526,26 +562,26 @@
             <div class="visible-md clip-top_margin-xs">&nbsp;</div>
             <div class="visible-lg clip-top_margin-xs">&nbsp;</div>
                   
-            <div class="clip-text4 clip-text_one">Why stake with us?</div>
+            <div class="clip-text4 clip-text_one">Stake with us</div>
 
             <div class="visible-xs clip-top_margin-x">&nbsp;</div>
             <div class="visible-sm clip-top_margin-xx">&nbsp;</div>
             <div class="visible-md clip-top_margin-xx">&nbsp;</div>
             <div class="visible-lg clip-top_margin-xxx">&nbsp;</div>
 
-            <div class="visible-xs about_icon_wrapper">
+            <div class="visible-xs about_icon_wrapper" data-aos="zoom-in">
               <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
             </div>
 
-            <div class="visible-sm about_icon_wrapper">
+            <div class="visible-sm about_icon_wrapper" data-aos="zoom-in">
               <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
             </div>
 
-            <div class="visible-md about_icon_wrapper">
+            <div class="visible-md about_icon_wrapper" data-aos="zoom-in">
               <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
             </div>
             
-            <div class="visible-lg about_icon_wrapper">
+            <div class="visible-lg about_icon_wrapper" data-aos="zoom-in">
                 <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_044.svg);"></div>
             </div>
 
@@ -589,13 +625,13 @@
 
           </div>
 
-          <a href="#6" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE <br>▼</a>
+          <a href="#6" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">MORE </a>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container footer">
+      <div class="container footer" >
 
         <div class="wrapper">
 
@@ -604,22 +640,34 @@
           <div class="visible-md clip-top_margin-md">&nbsp;</div>
           <div class="visible-lg clip-top_margin-lg">&nbsp;</div>
                   
-          <div class="clip-text4 clip-text_one">Join us</div>
+          <div class="clip-text4 clip-text_one" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="900">Join us
+        
+        </div>
 
 
-          <div class="visible-xs about_icon_wrapper invert_colors_filter">
+          <div class="visible-xs about_icon_wrapper invert_colors_filter" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="900">
             <div class="about_icon_xs" style="background-image: url(./assets/images/icons_about_042.svg);"></div>
           </div>
 
-          <div class="visible-sm about_icon_wrapper invert_colors_filter">
+          <div class="visible-sm about_icon_wrapper invert_colors_filter" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="900">
             <div class="about_icon_sm" style="background-image: url(./assets/images/icons_about_042.svg);"></div>
           </div>
 
-          <div class="visible-md about_icon_wrapper invert_colors_filter">
+          <div class="visible-md about_icon_wrapper invert_colors_filter" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="900">
             <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_042.svg);"></div>
           </div>
           
-          <div class="visible-lg about_icon_wrapper invert_colors_filter">
+          <div class="visible-lg about_icon_wrapper invert_colors_filter" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="900">
               <div class="about_icon_md" style="background-image: url(./assets/images/icons_about_042.svg);"></div>
           </div>
 
@@ -633,11 +681,15 @@
               &nbsp;
             </div>
           
-            <div class="col-sm-4 text-center">
+            <div class="col-sm-4 text-center" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900">
               <a href="./contactform.html" class="" style="color:white;text-decoration: none;">
                 Contact Form:
                 <div class="invert_colors_filter" style="display: block;">
-                  <img src="./assets/images/at.svg" width="44" height="44" style="width: 44px;height: 44px;" alt="">
+                  <img src="./assets/images/at.svg" width="44" height="44" style="width: 44px;height: 44px;" alt="" data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="900">
                 </div>
                 
               </a>
@@ -650,10 +702,12 @@
           </div>
           
           
-          <div id="subfooter" class="row footer_background">
-            <div class="col-sm-4 text-center">
+          <div id="subfooter" class="row footer_background" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="900">
+            <div class="col-sm-4 text-center" >
               Twitter (<b class="color_to_my_blue_light">@agilehw</b>):
-              <a href="" class="twitterlogo"></a>
+              <a href="" class="twitterlogo" ></a>
             </div>
             <div class="visible-xs clip-top_margin-x">&nbsp;</div>
             <div class="col-sm-4 text-center">
@@ -676,7 +730,7 @@
               
 
               <div class="visible-xs clip-top_margin-xs">&nbsp;</div>
-              <a href="#0" class="btn btn-primary btn-lg btn-more hidden-on-small-phones">UP ▲</a>
+              <a href="#0" class="btn btn-primary btn-lg btn-more hidden-on-small-phones" >▲</a>
 
             </div>
      
@@ -695,17 +749,112 @@
 <!--   
   "Fullpage Scrolling with Vanilla JavaScript" from https://github.com/amendoa/fullPageScrollPureJS
 -->
-  <script src="./assets/js/full-page-scroll.min.js"></script>
+  <!-- <script src="./assets/js/full-page-scroll.min.js"></script> -->
   <script type="text/javascript">
-    new fullScroll({
-      mainElement: "bodyel",
-      displayDots: true,
-      dotsPosition: "right",
-      animateTime: 0.4444,
-      animateFunction: "ease",
+    // new fullScroll({
+    //   mainElement: "bodyel",
+    //   displayDots: true,
+    //   dotsPosition: "right",
+    //   animateTime: 0.4444,
+    //   animateFunction: "ease",
+    // });
+
+    var sections = document.querySelectorAll('.graduallyshowonscroll');
+
+      sections.forEach(
+        function(elem) {
+         
+          var background = elem.querySelector('.onscrollbackground');
+
+          // background.style.opacity = opacity;
+          background.style.height = elem.offsetHeight+"px";
+     
+
+        });
+
+
+    window.addEventListener("scroll", () => {
+
+      var sections = document.querySelectorAll('.graduallyshowonscroll');
+
+      sections.forEach(
+        function(elem) {
+         
+          const start = elem.offsetTop;
+
+          const stop = elem.offsetTop+elem.scrollHeight;
+
+          const change = elem.offsetTop+(elem.offsetHeight/2);
+
+          const y = window.pageYOffset;
+
+          // y = y + (elem.offsetHeight/2);
+
+          // console.log(start);
+          // console.log(stop);
+
+          var opacity = 0;
+
+          // console.log(elem.offsetHeight);
+
+
+          
+
+          // console.log(checkpoint);
+
+          // const currentScroll = window.pageYOffset;
+          // // console.log(currentScroll);
+          if ((y > start)&&(y<stop)) {
+
+            // opacity = 1 - (y / stop);
+
+            var a = y - start;
+            var b = stop - y;
+
+            // console.log(a);
+            // console.log(b);
+
+            if (y<change) {
+              opacity = (a/b);
+              console.log(opacity);
+              // console.log(elem.scrollHeight);
+            } else {
+              opacity = 1;
+              // console.log('diss');
+            }
+            // console.log(y);
+            // opacity = 1 - currentScroll / checkpoint;
+          } else {
+            // opacity = 0;
+          }
+          // // console.log(opacity);
+          // elem.style.opacity = opacity;
+
+          var background = elem.querySelector('.onscrollbackground');
+          background.style.opacity = opacity;
+
+          // background.style.opacity = opacity;
+          // background.style.height = elem.offsetHeight+"px";
+          // console.log(elem.offsetHeight);
+          // console.log(opacity);
+          // background.setAttribute("style","height:"+elem.offsetHeight+"px");
+          
+
+      
+
+        });
+
+      
+      
+
     });
+    
 
     document.addEventListener("DOMContentLoaded", function (event) {
+
+
+      
+      AOS.init();
 
       var menu_more_statsEls = document.querySelectorAll('.menu_more_stats');
 
@@ -726,6 +875,8 @@
 
     });
   </script>
+
+  <script type="text/javascript" src="./assets/js/aos.js"></script>
 
   <script type="text/javascript" src="./assets/js/main.js"></script>
 

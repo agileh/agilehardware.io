@@ -5,14 +5,17 @@
 ); */
 
 @import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css); /*!
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+@import url(http://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css); /*!
+
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: "Expletus Sans", sans-serif;
+  font-family: "Hack", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -271,7 +274,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
+  font-family: "Hack", Helvetica, Arial, sans-serif;
   font-size: 11px;
   line-height: 1.78;
   color: #000;
@@ -368,7 +371,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
+  font-family: "Hack", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   color: #000;
@@ -4897,7 +4900,7 @@ body.minimal {
   height: 100vh;
 }
 .hero-full-container h1 {
-  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
+  font-family: "Hack", Helvetica, Arial, sans-serif;
   font-weight: 900;
 }
 .hero-full-container .hero-full-wrapper {
@@ -5053,7 +5056,7 @@ h3 {
   margin-bottom: 20px;
 }
 blockquote {
-  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
+  font-family: "Hack", Helvetica, Arial, sans-serif;
   border: none;
   padding-left: 0;
   padding-right: 0;
@@ -5407,7 +5410,7 @@ textarea {
 
 /* Clip text element */
 .clip-text {
-  font-family: "Expletus Sans", sans-serif;
+  font-family: "Hack", sans-serif;
   font-size: 5.5em;
   font-weight: bold;
   line-height: 1;
@@ -5436,7 +5439,7 @@ textarea {
 }
 
 clip-text2 {
-  font-family: "Expletus Sans", sans-serif;
+  font-family: "Hack", sans-serif;
   font-size: 4em;
   font-weight: bold;
   line-height: 1;
@@ -5455,7 +5458,7 @@ clip-text2 {
 }
 
 .clip-text3 {
-  font-family: "Expletus Sans", sans-serif;
+  font-family: "Hack", sans-serif;
   font-size: 4em;
   font-weight: bold;
   line-height: 1;
@@ -5470,7 +5473,7 @@ clip-text2 {
 }
 
 .clip-text4 {
-  font-family: "Expletus Sans", sans-serif;
+  font-family: "Hack", sans-serif;
   font-size: 4em;
   font-weight: bold;
   line-height: 1;
@@ -5538,7 +5541,7 @@ clip-text2 {
 }
 
 .subtext {
-  font-family: "Expletus Sans", Helvetica, Arial, sans-serif;
+  font-family: "Hack", Helvetica, Arial, sans-serif;
   font-size: 2.1em;
   font-weight: bold;
   line-height: 1;
@@ -5711,6 +5714,17 @@ moreinfo_who {
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
+}
+
+.onscrollbackground {
+  width: 100%;
+  /* height: 100%; */
+  /* height: 500px; */
+  display: inline-block;
+  background:rgba(0, 0, 0, 1);
+  position:absolute;
+  opacity: 0;
+  /* z-index: 5; */
 }
 
 .footer {
@@ -6022,3 +6036,41 @@ progress[value]::-moz-progress-bar {
 .gold3 {
   color: #fff203;
 }
+
+.ring-container {
+  position: relative;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #34b3e9;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.ringring {
+  border: 3px solid #8ddafc;
+  -webkit-border-radius: 30px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+
+.bgblinker {
+  animation: BGblinker 7.7s cubic-bezier(.7, 0, 0.7, 0.7) infinite alternate;  
+}
+@keyframes BGblinker { to { opacity: 0; } }
